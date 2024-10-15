@@ -1,0 +1,113 @@
+@import "./_variables";
+
+// Reset
+*,
+body,
+html,
+div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Global style
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $bg-color;
+  font-family: $para-font;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+  font-family: $heading-font;
+  line-height: 0.8;
+}
+
+// Text
+.dk-txt {
+  color: $txt-color;
+}
+
+.lt-txt {
+  color: $bg-color;
+}
+
+.h-h {
+  font-size: $hero-heading;
+}
+
+.h-sub {
+  font-size: $hero-subheading;
+}
+
+.l-h {
+  font-size: $l-heading;
+}
+
+.l-p {
+  font-size: $l-para;
+}
+
+.c-h {
+  font-size: $card-heading;
+}
+
+.c-p {
+  font-size: $card-para;
+}
+
+// Buttons
+.l-btn {
+  font-size: $l-btn-txt;
+  border: none;
+  padding: 14px 22px 10px 22px;
+
+  &.prim {
+    background-color: $prim-color;
+    color: $acc-color;
+  }
+
+  &.acc {
+    background-color: $acc-color;
+    color: $bg-color;
+  }
+}
+
+.s-btn {
+  font-size: $s-btn-txt;
+  border: none;
+  padding: 12px 20px 8px 20px;
+
+  &.prim {
+    background-color: $prim-color;
+    color: $acc-color;
+  }
+
+  &.acc {
+    background-color: $acc-color;
+    color: $bg-color;
+  }
+}
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  min-height: 800px;
+  background-image: url(../../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero-content {
+    width: 100%;
+    max-width: $max-content-w;
+  }
+}
