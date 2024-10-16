@@ -1,0 +1,41 @@
+@import "./globals/_variables";
+
+.top-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+
+  .top-nav {
+    width: 100%;
+    max-width: $max-content-w;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .site-logo {
+      width: 150px;
+      height: 70px;
+      background-image: url(../images/site-logo.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .site-links {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .link-item {
+        .site-link {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

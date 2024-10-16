@@ -29,7 +29,7 @@ button {
   line-height: 0.8;
 }
 
-// Text
+// Text color
 .dk-txt {
   color: $txt-color;
 }
@@ -38,6 +38,15 @@ button {
   color: $bg-color;
 }
 
+// Text sizes
+
+//Nav text
+.nav-txt {
+  font-family: $heading-font;
+  font-size: $card-para;
+}
+
+// hero headings
 .h-h {
   font-size: $hero-heading;
 }
@@ -46,18 +55,20 @@ button {
   font-size: $hero-subheading;
 }
 
+// large heading (content area)
 .l-h {
   font-size: $l-heading;
 }
-
+// large paragraph (content area)
 .l-p {
   font-size: $l-para;
 }
 
+// card heading
 .c-h {
   font-size: $card-heading;
 }
-
+//card paragraph
 .c-p {
   font-size: $card-para;
 }

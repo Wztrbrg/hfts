@@ -1,9 +1,11 @@
+import Header from './components/Header'
 import './assets/style/globals/global.scss'
 
 function App() {
 
   return (
     <>
+    <Header/>
     <div className="hero-section">
       <div className="hero-content">
         <h1 className='h-h lt-txt'>hero heading</h1>
