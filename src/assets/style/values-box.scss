@@ -1,0 +1,50 @@
+@import "./globals/_variables";
+
+.values-box {
+  position: relative;
+  width: fit-content;
+  max-width: $max-content-w;
+  margin: -108px auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 10;
+  border: 1px solid $prim-bord;
+  border-radius: 24px;
+
+  .value {
+    width: 100%;
+    max-width: 215px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    .value-ico {
+      width: 48px;
+      height: 48px;
+      border-radius: 2000px;
+
+      path {
+        fill: $acc-color;
+      }
+    }
+
+    .value-heading {
+      text-align: center;
+    }
+
+    .value-para {
+      text-align: center;
+    }
+  }
+
+  .v-divider {
+    width: 1px;
+    min-height: 100%;
+    background-color: $prim-bord;
+  }
+}

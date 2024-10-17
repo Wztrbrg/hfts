@@ -29,6 +29,11 @@ button {
   line-height: 0.8;
 }
 
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
 .bg-dk-overlay {
   position: absolute;
   top: 0;
@@ -116,4 +121,13 @@ button {
     background-color: $acc-color;
     color: $bg-color;
   }
+}
+
+// Bg colors
+.prim-bgc {
+  background-color: $prim-color;
+}
+
+.acc-bgc {
+  background-color: $acc-color;
 }
