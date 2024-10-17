@@ -95,6 +95,7 @@ button {
   font-size: $l-btn-txt;
   border: none;
   padding: 14px 22px 10px 22px;
+  cursor: pointer;
 
   &.prim {
     background-color: $prim-color;
@@ -111,6 +112,7 @@ button {
   font-size: $s-btn-txt;
   border: none;
   padding: 12px 20px 8px 20px;
+  cursor: pointer;
 
   &.prim {
     background-color: $prim-color;
