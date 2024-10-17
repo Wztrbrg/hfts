@@ -1,0 +1,68 @@
+@import "./globals/_variables";
+
+.about-content-section {
+    display: grid;
+    place-items: center;
+
+    padding: 12rem 2rem;
+
+
+
+    .card {
+
+        width: 100%;
+        max-width: 1200px;
+
+        // margin-top: 7rem;
+
+        display: flex;
+        gap: 2rem;
+
+        .image {
+            width: 50%;
+            background-image: url(../../assets/images/about.jpg);
+            background-size: cover;
+        }
+
+        .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1rem;
+            width: 50%;
+        }
+
+    }
+
+}
+
+/* Media query for tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    
+    .about-content-section{
+
+        .card {
+
+            flex-direction: column;
+
+        
+            .image {
+
+                width: 100%;
+                min-height: 20rem;
+                background-size: cover;
+                background-position: bottom;
+
+            }
+
+            .text-wrapper {
+                width: auto;
+            }
+        }
+    }
+}
+
+/* Media query for mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    
+}
