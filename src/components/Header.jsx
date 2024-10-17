@@ -8,22 +8,26 @@ const Header = () => {
     <>
       <header className="top-header">
         <nav className="top-nav">
-          <div className="site-logo"></div>
+          <Link to={'/'}>
+            <div className="site-logo"></div>
+          </Link>
           <ul className="site-links">
             <li className="link-item">
-              <a href="#" className="site-link nav-txt lt-txt">tjänster</a>
+              <Link to={'/tjanster'} className="site-link nav-txt lt-txt">tjänster</Link>
             </li>
             <li className="link-item">
-              <a href="#" className="site-link nav-txt lt-txt">lediga bostäder & lokaler</a>
+              <Link to={'/bostader-och-lokaler'} className="site-link nav-txt lt-txt">lediga bostäder & lokaler</Link>
             </li>
             <li className="link-item">
-              <a href="#" className="site-link nav-txt lt-txt">om oss</a>
+              <Link to={'/om-oss'} className="site-link nav-txt lt-txt">om oss</Link>
             </li>
             <li className="link-item">
-              <a href="#" className="site-link nav-txt lt-txt">kontakt</a>
+              <Link to={'/kontakt'} className="site-link nav-txt lt-txt">kontakt</Link>
             </li>
             <li className="link-item ">
-              <button className="s-btn prim">felanmälan</button>
+              <Link to={'/felanmalan'}>
+                <button className="s-btn prim">felanmälan</button>
+              </Link>
             </li>
           </ul>
         </nav>
