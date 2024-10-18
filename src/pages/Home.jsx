@@ -1,13 +1,15 @@
 import HeroSection from "../components/HeroSection";
 import ValuesBox from "../components/ValuesBox";
-import AboutContent from "../components/AboutContent";
+import AboutShort from "../components/AboutShort";
+import ServicesShort from "../components/ServicesShort";
 
 const Home = () => {
   return (
     <div className="page-wrapper">
       <HeroSection />
       <ValuesBox />
-      <AboutContent/>
+      <AboutShort/>
+      <ServicesShort />
     </div>
   )
 }

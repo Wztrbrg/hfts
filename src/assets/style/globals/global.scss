@@ -27,8 +27,6 @@ h5,
 button {
   font-family: $heading-font;
   font-weight: 300;
-  line-height: 1;
-  letter-spacing: 0.3px;
 }
 
 .page-wrapper {
@@ -72,6 +70,8 @@ button {
 
 .h-sub {
   font-size: $hero-subheading;
+  font-weight: 400;
+  line-height: 1.1;
 }
 
 // large heading (content area)
@@ -81,6 +81,8 @@ button {
 // large paragraph (content area)
 .l-p {
   font-size: $l-para;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
 }
 
 // card heading
@@ -90,6 +92,20 @@ button {
 //card paragraph
 .c-p {
   font-size: $card-para;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+}
+
+// large card heading
+.lc-h {
+  font-size: $l-card-heading;
+  letter-spacing: 1px;
+}
+//card paragraph
+.lc-p {
+  font-size: $l-card-para;
+  line-height: 1.1;
+  letter-spacing: 0.3px;
 }
 
 // Buttons

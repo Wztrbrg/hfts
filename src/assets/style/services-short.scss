@@ -1,0 +1,66 @@
+@import "./globals/_variables";
+
+.services-short-section {
+  width: 100%;
+  background: linear-gradient(to bottom, $prim-color 2%, $bg-color);
+  display: flex;
+  justify-content: center;
+  padding: 80px 16px;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  .services-short-heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .services-short-content {
+    width: 100%;
+    max-width: $max-content-w;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    .services-short-card {
+      position: relative;
+      width: 50%;
+      // max-width: 450px;
+      background-color: $bg-color;
+      box-shadow: 0 25px 40px $prim-color;
+
+      .services-short-card-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .text-container {
+        width: 100%;
+        // height: 50%;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h3 {
+          font-weight: 600;
+        }
+
+        p {
+          margin-bottom: 26px;
+        }
+
+        a {
+          position: absolute;
+          bottom: 16px;
+          right: 16px;
+          color: $acc-color;
+          font-family: $heading-font;
+          text-decoration: none;
+          font-size: $l-card-para;
+        }
+      }
+    }
+  }
+}
