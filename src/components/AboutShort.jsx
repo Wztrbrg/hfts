@@ -1,11 +1,11 @@
-import '../assets/style/about-content.scss';
+import '../assets/style/about-short.scss';
 
 const AboutContent = () => {
   return (
     <>
-      <section className="about-content-section">
+      <section className="about-short-section">
 
-        <div className='card'>
+        <div className='about-short-content'>
             <div className="image"></div>
             <div className="text-wrapper">
                 <h1 className='l-h dk-txt'>vi på hållbar fastighetsservice syd</h1>

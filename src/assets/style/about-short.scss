@@ -1,12 +1,12 @@
 @import "./globals/_variables";
 
-.about-content-section {
+.about-short-section {
   display: grid;
   place-items: center;
   padding: 70px 16px;
   margin-top: 109px;
 
-  .card {
+  .about-short-content {
     width: 100%;
     max-width: $max-content-w;
 
