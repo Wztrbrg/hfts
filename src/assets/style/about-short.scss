@@ -3,7 +3,7 @@
 .about-short-section {
   display: grid;
   place-items: center;
-  padding: 70px 16px;
+  padding: 80px 16px;
   margin-top: 109px;
 
   .about-short-content {
@@ -11,7 +11,7 @@
     max-width: $max-content-w;
 
     display: flex;
-    gap: 50px;
+    gap: 40px;
 
     .image {
       width: 50%;
@@ -39,8 +39,8 @@
 
 /* Media query for tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
-  .about-content-section {
-    .card {
+  .about-short-section {
+    .about-short-content {
       flex-direction: column;
 
       .image {
