@@ -1,0 +1,72 @@
+@import "./globals/_variables";
+
+.bottom-footer {
+
+    padding: 80px 16px 40px 16px;
+    
+    background-color: #252525;
+
+    .footer-content {
+        max-width: $max-content-w;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+
+
+        .footer-col {
+            flex: 1;
+        }
+    }
+
+    .copyright-text {
+        position: relative;
+        margin-top: 100px;
+
+        text-align: center;
+    }
+
+    .copyright-text::after {
+        content: '';
+        position: absolute;
+        top: -40px;
+
+        left: 50%;  /* Move it to the middle */
+        transform: translateX(-50%);  /* Pull it back by 50% of its width */
+    
+        height: 1px;
+        width: 100%;
+        max-width: $max-content-w;
+
+        background-color: rgb(73, 73, 73);
+    }
+
+
+    ul {
+        list-style-type: none;
+    }
+
+    
+}
+
+/* Media query for tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    
+    .bottom-footer {
+    
+        .footer-content {
+            
+            flex-direction: column;
+            gap: 50px;
+
+            max-width: 480px;
+            
+            
+            // ta bort denna så centraras texten i mobilläget, kluven på vad som är snyggast
+            margin: 0;
+
+        }
+    
+    }
+}
