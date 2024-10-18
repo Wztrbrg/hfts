@@ -7,6 +7,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 const ServicesShort = () => {
   return (
     <section className="services-short-section">
+      <div className="wave-edge"></div>
       <h1 className="services-short-heading l-h dk-txt">Våra hållbara tjänster</h1>
       <div className="services-short-content">
         <article className="services-short-card">
