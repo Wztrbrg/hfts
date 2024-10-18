@@ -108,6 +108,18 @@ button {
   letter-spacing: 0.3px;
 }
 
+// footer heading
+.lf-h {
+  font-size: $l-card-heading;
+  letter-spacing: 1px;
+}
+//footer paragraph
+.lf-p {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.3px;
+}
+
 // Buttons
 .l-btn {
   font-size: $l-btn-txt;

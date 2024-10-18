@@ -7,6 +7,7 @@ import Listings from './pages/Listings'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Report from './pages/Report'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Route path='/kontakt' element={<Contact />} />
       <Route path='/felanmalan' element={<Report />} />
     </Routes>
+    <Footer/>
     </>
   )
 }
