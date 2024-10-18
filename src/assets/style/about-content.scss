@@ -1,68 +1,62 @@
 @import "./globals/_variables";
 
 .about-content-section {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
+  padding: 70px 16px;
+  margin-top: 109px;
 
-    padding: 12rem 2rem;
+  .card {
+    width: 100%;
+    max-width: $max-content-w;
 
+    display: flex;
+    gap: 50px;
 
-
-    .card {
-
-        width: 100%;
-        max-width: 1200px;
-
-        // margin-top: 7rem;
-
-        display: flex;
-        gap: 2rem;
-
-        .image {
-            width: 50%;
-            background-image: url(../../assets/images/about.jpg);
-            background-size: cover;
-        }
-
-        .text-wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 1rem;
-            width: 50%;
-        }
-
+    .image {
+      width: 50%;
+      min-height: 450px;
+      background-image: url(../../assets/images/about.jpg);
+      background-size: cover;
+      background-position: center;
     }
 
+    .text-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      h1 {
+        margin-bottom: 24px;
+      }
+
+      p {
+        margin-bottom: 16px;
+      }
+    }
+  }
 }
 
 /* Media query for tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
-    
-    .about-content-section{
+  .about-content-section {
+    .card {
+      flex-direction: column;
 
-        .card {
+      .image {
+        width: 100%;
+        min-height: 20rem;
+        background-size: cover;
+        background-position: top center;
+      }
 
-            flex-direction: column;
-
-        
-            .image {
-
-                width: 100%;
-                min-height: 20rem;
-                background-size: cover;
-                background-position: bottom;
-
-            }
-
-            .text-wrapper {
-                width: auto;
-            }
-        }
+      .text-wrapper {
+        width: auto;
+      }
     }
+  }
 }
 
 /* Media query for mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
-    
 }

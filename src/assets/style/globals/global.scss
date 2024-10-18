@@ -26,7 +26,9 @@ h4,
 h5,
 button {
   font-family: $heading-font;
-  line-height: 0.8;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0.3px;
 }
 
 .page-wrapper {
