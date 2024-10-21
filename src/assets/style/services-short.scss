@@ -3,23 +3,23 @@
 .services-short-section {
   position: relative;
   width: 100%;
-  // background: linear-gradient(to bottom, $prim-color 2%, $bg-color);
+  background: linear-gradient(to bottom, $prim-color 2%, $bg-color);
   display: flex;
   justify-content: center;
   padding: 80px 16px 160px 16px;
   flex-wrap: wrap;
   gap: 40px;
 
-  .wave-edge {
-    position: absolute;
-    top: -90px;
-    left: 0;
-    width: 100%;
-    height: 350px;
-    background-image: url(../images/wave.svg);
-    background-size: cover;
-    background-position: center;
-  }
+  // .wave-edge {
+  //   position: absolute;
+  //   top: -90px;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 350px;
+  //   background-image: url(../images/wave.svg);
+  //   background-size: cover;
+  //   background-position: center;
+  // }
 
   .services-short-heading {
     width: 100%;
