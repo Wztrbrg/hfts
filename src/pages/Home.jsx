@@ -2,6 +2,7 @@ import HeroSection from "../components/HeroSection";
 import ValuesBox from "../components/ValuesBox";
 import AboutShort from "../components/AboutShort";
 import ServicesShort from "../components/ServicesShort";
+import TestimonialSection from "../components/TestimonialSection";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <ValuesBox />
       <AboutShort/>
       <ServicesShort />
+      <TestimonialSection />
     </div>
   )
 }

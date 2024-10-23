@@ -1,0 +1,39 @@
+@import "./globals/_variables";
+
+.testimonial-section {
+  width: 100%;
+  height: fit-content;
+  background: linear-gradient(to bottom, $prim-color 2%, $bg-color);
+  display: flex;
+  justify-content: center;
+  padding: 80px 16px;
+
+  .testimonial-section-content {
+    width: 100%;
+    height: 100%;
+    max-width: $max-content-w;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .testimonial-text {
+      width: 100%;
+      height: 100%;
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+    // Testimonial carousel
+    .testimonial-container {
+      width: 100%;
+      border-radius: 16px;
+      // overflow: hidden;
+      // height: 100%;
+    }
+  }
+}
