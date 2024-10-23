@@ -5,10 +5,9 @@ import '../assets/style/card-slider.scss';
 const CardSlider = () => {
   const settings = {
     infinite: true,
-    slidesToShow: 3, // Show one full card and half of the next
+    slidesToShow: 1.5, // Show one full card and half of the next
     slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: "0px",
+    centerMode: false,
     dots: true,
     speed: 300,
     autoplay: true,
@@ -26,22 +25,25 @@ const CardSlider = () => {
   };
 
   const cards = [
-    { id: 1, title: "Card 1", desc: "Card description" },
-    { id: 2, title: "Card 2", desc: "Card description" },
-    { id: 3, title: "Card 3", desc: "Card description" },
-    { id: 4, title: "Card 4", desc: "Card description" },
+    { id: 1, image: "https://i.pravatar.cc/110?img=3", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
+    { id: 2, image: "https://i.pravatar.cc/110?img=20", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
+    { id: 3, image: "https://i.pravatar.cc/110?img=13", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
+    { id: 4, image: "https://i.pravatar.cc/110?img=42", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
   ];
 
   return (
       <Slider {...settings} className="testimonial-slider">
         {cards.map((card) => (
           <div key={card.id} className="testimonial-card">
-            <h3 className="testimonial-card-title c-h dk-txt">
-              {card.title}
-            </h3>
-            <p className="testimonial-card-desc c-p dk-txt">
-              {card.desc}
-            </p>
+            <img className="testimonial-card-img" src={card.image} alt="Porträtt av person som lämnat recension" />
+            <div className="testimonial-card-content">
+              <h3 className="testimonial-card-title c-h dk-txt">
+                {card.title}
+              </h3>
+              <p className="testimonial-card-desc c-p dk-txt">
+                {card.desc}
+              </p>
+            </div>
           </div>
         ))}
       </Slider>

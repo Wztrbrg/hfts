@@ -1,22 +1,58 @@
+@import "./globals/_variables";
+
 .testimonial-slider {
   width: 100%;
+  height: 348px;
 
   .slick-slide.slick-current {
-    padding: 0 10px;
+    padding: 0;
+    padding-right: 8px;
+    margin-left: 5.33%;
+    z-index: 10;
 
     .testimonial-card {
       opacity: 1;
+      filter: brightness(1);
     }
   }
 
   .testimonial-card {
     background-color: #fff;
-    opacity: 0.6;
-    border-radius: 16px;
-    min-height: 200px;
+    opacity: 0.7;
+    border-radius: 8px;
+    min-height: 300px;
     padding: 20px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 
-    transition: 0.3s;
+    .testimonial-card-img {
+      border-radius: 2000px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .testimonial-card-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .testimonial-card-title,
+      .testimonial-card-desc {
+        text-align: center;
+      }
+
+      .testimonial-card-desc {
+        font-style: italic;
+      }
+
+      .testimonial-card-desc::before,
+      .testimonial-card-desc::after {
+        content: '"';
+      }
+    }
   }
 
   .slick-prev {
@@ -32,6 +68,25 @@
   }
 
   .slick-dots {
-    bottom: -40px;
+    top: 320px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial-slider {
+    width: 100%;
+
+    .slick-slide.slick-current {
+      padding: 0 10px;
+      margin-left: 0;
+    }
+
+    .slick-slide {
+      padding: 0 10px;
+    }
+
+    .testimonial-card {
+      opacity: 1;
+    }
   }
 }

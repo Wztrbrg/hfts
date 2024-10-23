@@ -11,8 +11,7 @@ const ValuesBox = () => {
           Miljövänlighet
         </h3>
         <p className="value-para c-p dk-txt">
-          Vi strävar efter att minimera vår miljöpåverkan genom 
-          klimatsmarta lösningar och energieffektiva åtgärder.
+          Vi strävar efter att minimera vår miljöpåverkan.
         </p>
       </article>
       <div className="v-divider"></div>
@@ -22,8 +21,7 @@ const ValuesBox = () => {
           Effektivitet
         </h3>
         <p className="value-para c-p dk-txt">
-          Vår expertis hjälper dig att optimera fastighetsdriften, 
-          minska kostnader och öka resurseffektiviteten.
+          Vår expertis hjälper dig att optimera fastighetsdriften och minska kostnader.
         </p>
       </article>
       <div className="v-divider"></div>
