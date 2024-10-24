@@ -21,7 +21,16 @@
       }
 
       p {
-        color: $prim-color;
+        color: $bg-color;
+        &.lf-p a {
+          text-decoration: none;
+          color: $prim-color;
+          font-weight: 700;
+        }
+      }
+
+      .site-logo {
+        height: 80px;
       }
     }
   }
@@ -54,8 +63,8 @@
 
     li {
       a {
-        font-weight: 600;
-        // text-decoration: none;
+        font-weight: 700;
+        text-decoration: none;
         color: $prim-color;
       }
     }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../assets/style/footer.scss';
+import logo from '../assets/images/site-logo.png';
 
 const Footer = () => {
 
@@ -8,6 +9,11 @@ const Footer = () => {
     <>
         <footer className="bottom-footer lt-txt">
             <div className="footer-content">
+                <div className="footer-col">
+                    <Link to={'/'}>
+                        <img src={logo} alt="logo" className="site-logo" />
+                    </Link>
+                </div>
                 
                 <div className="footer-col">
                     <h2 className="lf-h">NAVIGERA</h2>
@@ -32,17 +38,9 @@ const Footer = () => {
                 
                 </div>
                 <div className="footer-col">
-                    <h2 className="lf-h">GRYM HEADING</h2>
-                    <p className="lf-p">
-                        Lorem ipsum dolor sit, amet consectetur
-                        adipisicing elit. Explicabo,
-                        qui voluptates blanditiis
-                    </p>
-                </div>
-                <div className="footer-col">
                     <h2 className="lf-h">KONTAKTA OSS</h2>
                     <p className="lf-p">
-                        Har du frågor? Kontakta oss gärna via e-post på [email@example.com] eller ring oss på [123-456-7890]. Du hittar oss på [Gatuadress, Stad]. Vi ser fram emot att höra från dig!
+                        Har du frågor? Kontakta oss gärna via e-post på <a href="mailto:info@hallbarservice.se">info@hallbarservice.se</a><br /> Eller ring oss på <a href="tel:+46720255360">072 025 53 60</a><br/>Du hittar oss på c/o R2 FASTIGHETER AB<br/>GREV TUREGATAN 13 B<br/>114 46 Stockholm<br/>Vi ser fram emot att höra från dig!
                     </p>
                 </div>
 

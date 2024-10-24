@@ -1,5 +1,6 @@
 import '../assets/style/services-short.scss';
-import ServiceImage from '../assets/images/about.jpg';
+import ServiceImageFirst from '../assets/images/service-image1.jpg';
+import ServiceImageSecond from '../assets/images/service-image2.jpg';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -12,7 +13,7 @@ const ServicesShort = () => {
       <div className="services-short-content">
         <article className="services-short-card">
           <img 
-            src={ServiceImage} 
+            src={ServiceImageFirst} 
             alt="bild som symboliser en tjänst som vi 
             tillhandahåller" 
             className='services-short-card-img'
@@ -39,7 +40,7 @@ const ServicesShort = () => {
         </article>
         <article className="services-short-card">
           <img 
-            src={ServiceImage} 
+            src={ServiceImageSecond} 
             alt="bild som symboliser en tjänst som vi 
             tillhandahåller" 
             className='services-short-card-img'
