@@ -25,10 +25,10 @@ const CardSlider = () => {
   };
 
   const cards = [
-    { id: 1, image: "https://i.pravatar.cc/110?img=3", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
-    { id: 2, image: "https://i.pravatar.cc/110?img=20", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
-    { id: 3, image: "https://i.pravatar.cc/110?img=13", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
-    { id: 4, image: "https://i.pravatar.cc/110?img=42", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
+    { id: 1, image: "https://i.pravatar.cc/110?img=60", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
+    { id: 2, image: "https://i.pravatar.cc/110?img=49", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
+    { id: 3, image: "https://i.pravatar.cc/110?img=18", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
+    { id: 4, image: "https://i.pravatar.cc/110?img=31", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
   ];
 
   return (
