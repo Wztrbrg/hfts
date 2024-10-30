@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/style/testimonial-section.scss';
+import '../../assets/style/home-page/testimonial-section.scss';
 import CardSlider from './CardSlider';
 
 

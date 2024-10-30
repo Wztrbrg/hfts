@@ -1,4 +1,4 @@
-import '../assets/style/values-box.scss';
+import '../../assets/style/home-page/values-box.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEarthAmericas, faBolt, faCity  } from '@fortawesome/free-solid-svg-icons';
 

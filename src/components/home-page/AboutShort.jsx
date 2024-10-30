@@ -1,4 +1,4 @@
-import '../assets/style/about-short.scss';
+import '../../assets/style/home-page/about-short.scss';
 
 const AboutContent = () => {
   return (

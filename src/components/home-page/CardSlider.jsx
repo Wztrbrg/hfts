@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import '../assets/style/card-slider.scss';
+import '../../assets/style/home-page/card-slider.scss';
 
 const CardSlider = () => {
   const settings = {

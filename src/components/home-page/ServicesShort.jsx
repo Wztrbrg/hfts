@@ -1,6 +1,6 @@
-import '../assets/style/services-short.scss';
-import ServiceImageFirst from '../assets/images/service-image1.jpg';
-import ServiceImageSecond from '../assets/images/service-image2.jpg';
+import '../../assets/style/home-page/services-short.scss';
+import ServiceImageFirst from '../../assets/images/service-image1.jpg';
+import ServiceImageSecond from '../../assets/images/service-image2.jpg';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';

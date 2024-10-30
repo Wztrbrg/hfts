@@ -1,7 +1,10 @@
+import ServiceHero from "../components/services-page/ServiceHero";
 
 const Services = () => {
   return (
-    <h1>Tjänster</h1>
+    <div className="page-wrapper">
+      <ServiceHero />
+    </div>
   )
 }
 

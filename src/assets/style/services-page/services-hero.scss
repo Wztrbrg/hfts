@@ -1,0 +1,34 @@
+@import "../globals/_variables";
+@import "../globals/global.scss";
+
+.service-hero {
+  height: 80vh;
+  min-height: 600px;
+  width: 100%;
+  background-color: $prim-color;
+  background-image: url(../../images/service-image1.jpg);
+  background-size: cover;
+  background-position: center top;
+
+  .service-hero-overlay {
+    height: 80vh;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    background-color: rgba(15, 49, 8, 0.6);
+    // backdrop-filter: blur(10px);
+
+    .service-hero-content {
+      max-width: $max-content-w;
+      display: flex;
+      justify-content: center;
+
+      h1 {
+        text-align: center;
+        width: 60%;
+      }
+    }
+  }
+}

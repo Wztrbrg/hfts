@@ -1,4 +1,4 @@
-import '../assets/style/hero-section.scss';
+import '../../assets/style/home-page/hero-section.scss';
 import { Link } from 'react-router-dom';
 
 const HeroSection = () => {

@@ -1,14 +1,15 @@
-@import "./globals/_variables";
+@import "../globals/_variables";
 
 .hero-section {
   width: 100%;
-  min-height: 100vh;
-  // min-height: 800px;
-  background-image: url(../images/hero-bg.jpg);
+  height: 100vh;
+  min-height: 800px;
+  background-image: url(../../images/hero-bg.jpg);
   background-size: cover;
   background-position: center;
 
   .hero-section-overlay {
+    min-height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
