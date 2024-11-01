@@ -16,7 +16,7 @@
     max-width: $max-content-w;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 
     .site-logo {
       height: 80px;
@@ -32,6 +32,24 @@
       .link-item {
         .site-link {
           text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &.dark {
+    position: relative;
+    border-bottom: 1px solid #8ab18c42;
+
+    .top-nav {
+      .site-logo {
+        filter: brightness(1);
+      }
+      .site-links {
+        .link-item {
+          .site-link {
+            color: $txt-color;
+          }
         }
       }
     }
