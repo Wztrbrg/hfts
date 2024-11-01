@@ -4,7 +4,7 @@ import { faEarthAmericas, faBolt, faCity  } from '@fortawesome/free-solid-svg-ic
 
 const ValuesBox = () => {
   return (
-    <section className="values-box">
+    <section className="values-box prim-bgc">
       <article className="value">
         <FontAwesomeIcon icon={faEarthAmericas} className="value-ico" />
         <h3 className="value-heading c-h dk-txt">

@@ -97,6 +97,10 @@ button {
   letter-spacing: 0.2px;
 }
 
+.m-h {
+  font-size: $m-heading;
+}
+
 // card heading
 .c-h {
   font-size: $card-heading;
@@ -165,6 +169,12 @@ button {
     background-color: $acc-color;
     color: $bg-color;
   }
+
+  &.sec {
+    background: none;
+    border: 2px solid $acc-color;
+    color: $acc-color;
+  }
 }
 
 // Bg colors
@@ -174,4 +184,24 @@ button {
 
 .acc-bgc {
   background-color: $acc-color;
+}
+
+@media screen and (max-width: 568px) {
+  .h-h {
+    font-size: $hero-heading-mobile;
+  }
+
+  .h-sub {
+    font-size: $hero-subheading-mobile;
+  }
+
+  .l-h {
+    font-size: $l-heading-mobile;
+  }
+
+  .l-tag {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
 }

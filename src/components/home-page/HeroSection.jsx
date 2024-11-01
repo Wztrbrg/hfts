@@ -20,8 +20,8 @@ const HeroSection = () => {
               <Link to={'/kontakt'}>
                 <button className="l-btn acc">Kontakta Oss</button>
               </Link>
-              <Link to={'/tjanster'}>
-                <button className="l-btn prim">Våra Tjänster</button>
+              <Link to={'/felanmalan'}>
+                <button className="l-btn prim">Felanmälan</button>
               </Link>
             </div>
           </article>

@@ -3,7 +3,7 @@ $max-content-w: 1200px;
 
 // Colors
 $bg-color: #f6f6f6;
-$prim-color: #d4e1bb;
+$prim-color: #c2d8b3;
 $sec-color: #aa9f7a;
 $acc-color: #568f45;
 $txt-color: #504f4f;
@@ -15,12 +15,15 @@ $para-font: "Open Sans", sans-serif;
 
 // Hero/header sections
 $hero-heading: 72px;
+$hero-heading-mobile: 48px;
 $hero-subheading: 24px;
+$hero-subheading-mobile: 18px;
 
 // Content area
 $l-heading: 56px;
 $l-para: 18px;
-
+$m-heading: 36px;
+$l-heading-mobile: 32px;
 // Cards
 $card-heading: 22px;
 $card-para: 16px;
