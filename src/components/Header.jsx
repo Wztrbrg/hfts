@@ -8,7 +8,7 @@ const Header = () => {
   const location = useLocation();
 
   const navClass =
-      location.pathname === '/' ? '' :
+      location.pathname === '/' ? 'dark' :
       'dark';
 
   return (
