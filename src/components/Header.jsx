@@ -33,7 +33,7 @@ const Header = () => {
             </li>
             <li className="link-item ">
               <Link to={'/felanmalan'}>
-                <button className="s-btn prim">felanmälan</button>
+                <button className="m-btn prim">felanmälan</button>
               </Link>
             </li>
           </ul>
