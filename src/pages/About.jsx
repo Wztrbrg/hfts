@@ -1,7 +1,8 @@
+import AboutHero from "../components/about-page/AboutHero";
 
 const About = () => {
   return (
-    <h1>Om oss</h1>
+    <AboutHero />
   )
 }
 
