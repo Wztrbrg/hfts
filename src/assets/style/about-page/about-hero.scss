@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   padding: 80px 16px;
-  background-color: #555555;
+  background-color: #517751;
   overflow: hidden;
 
   .bg-img-overlay {
@@ -17,10 +17,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../../images/about-image.jpg);
+    background-image: url(../../images/building.jpg);
     background-size: cover;
-    background-position: center -120px;
-    opacity: 0.3;
+    background-position: center;
+    opacity: 0.6;
+    mix-blend-mode: overlay;
   }
 
   .about-hero-content {
@@ -67,10 +68,6 @@
 
       h3 {
         filter: brightness(1.4);
-      }
-
-      span {
-        // opacity: 0.6;
       }
     }
   }
