@@ -12,7 +12,7 @@ const AboutHero = () => {
         <header className='heading-container'>
           <h3 className="l-tag acc-txt">Om oss</h3>
           <h1 className="h-h lt-txt">
-            Passionerade kring <span className='pr-txt'>hållbara lösningar</span> med över 20 års erfarenhet
+            Passionerade kring <span className='pr-txt'>hållbara lösningar</span>
           </h1>
         </header>
       </article>

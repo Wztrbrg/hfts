@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   padding: 80px 16px;
-  background-color: #93ac91;
+  background-color: #d5dad5;
   overflow: hidden;
 
   .service-hero-content {
@@ -26,21 +26,22 @@
         width: 560px;
         height: 400px;
         border-radius: 1000px 2000px 200px 2000px;
-        background-color: $acc-color;
+        background-color: $prim-color;
         rotate: 10deg;
         filter: blur(70px);
-        opacity: 0.3;
+        opacity: 0.7;
       }
 
       &.center {
         top: -250px;
-        left: 45%;
+        left: 50%;
+        transform: translateX(-50%);
         width: 500px;
         height: 350px;
         border-radius: 2000px;
-        background-color: $prim-color;
+        background-color: $acc-color;
         filter: blur(100px);
-        opacity: 0.8;
+        opacity: 0.3;
       }
     }
 
@@ -54,10 +55,10 @@
       z-index: 0;
 
       h3 {
-        filter: brightness(1.5);
+        // filter: brightness(1);
       }
       span {
-        filter: brightness(1.1);
+        filter: brightness(1.8);
       }
     }
   }
