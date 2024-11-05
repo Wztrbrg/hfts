@@ -1,7 +1,12 @@
+import ContactContent from "../components/contact-page/ContactContent";
+import ContactHero from "../components/contact-page/ContactHero";
 
 const Contact = () => {
   return (
-    <h1>Kontakt</h1>
+    <>
+      <ContactHero />
+      <ContactContent />
+    </>
   )
 }
 
