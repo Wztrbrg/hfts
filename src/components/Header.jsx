@@ -5,15 +5,15 @@ import logo from '../assets/images/site-logo.png';
 
 const Header = () => {
 
-  const location = useLocation();
+  // const location = useLocation();
 
-  const navClass =
-      location.pathname === '/' ? 'dark' :
-      'dark';
+  // const navClass =
+  //     location.pathname === '/' ? 'dark' :
+  //     'dark';
 
   return (
     <>
-      <header className={`top-header ${navClass}`}>
+      <header className={"top-header"}>
         <nav className="top-nav">
           <Link to={'/'}>
             <img src={logo} alt="logo" className="site-logo" />
