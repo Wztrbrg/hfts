@@ -12,7 +12,7 @@ const ListingsHero = () => {
         <header className='heading-container'>
           <h3 className="l-tag acc-txt">Ledigt</h3>
           <h1 className="h-h lt-txt">
-            Här hittar du våra lediga <span className='pr-txt'>bostäder & lokaler</span>
+            Hos oss bor du i <span className='pr-txt'>hållbart förvaltade</span> fastigheter
           </h1>
         </header>
       </article>
