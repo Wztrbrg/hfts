@@ -1,7 +1,8 @@
+import ListingsHero from "../components/listings-page/ListingsHero";
 
 const Listings = () => {
   return (
-    <h1>Lediga bostäder & lokaler</h1>
+    <ListingsHero />
   )
 }
 
