@@ -58,7 +58,6 @@ const AboutContent = () => {
           <header>
             <h1 className="l-h dk-txt">Vår metod för hållbar fastighetsförvaltning</h1>
           </header>
-          {/* <div className="h-divider"></div> */}
           <section className="approach-grid">
 
             <article className="approach-box">
