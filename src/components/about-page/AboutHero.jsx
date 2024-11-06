@@ -7,8 +7,6 @@ const AboutHero = () => {
     <div className="about-hero">
       <div className="bg-img-overlay"></div>
       <article className="about-hero-content">
-        <div className="bg-blur-blob left"></div>
-        <div className="bg-blur-blob center"></div>
         <header className='heading-container'>
           <h3 className="l-tag acc-txt">Om oss</h3>
           <h1 className="h-h lt-txt">
