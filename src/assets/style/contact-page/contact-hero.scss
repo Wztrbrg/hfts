@@ -1,7 +1,7 @@
 @import "../globals/_variables";
 @import "../globals/global.scss";
 
-.service-hero {
+.contact-hero {
   position: relative;
   width: 100%;
   height: 80vh;
@@ -19,14 +19,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../../images/service-hero.jpg);
+    background-image: url(../../images/contact-hero.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     opacity: 0.5;
     mix-blend-mode: color-burn;
   }
 
-  .service-hero-content {
+  .contact-hero-content {
     position: relative;
     width: 100%;
     max-width: $max-content-w;
@@ -45,13 +45,12 @@
         background-color: $prim-color;
         rotate: 10deg;
         filter: blur(70px);
-        opacity: 0.4;
+        opacity: 0.3;
       }
 
       &.center {
         top: -250px;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 45%;
         width: 500px;
         height: 350px;
         border-radius: 2000px;
@@ -62,16 +61,15 @@
     }
 
     .heading-container {
-      position: relative;
       width: 100%;
       max-width: 800px;
       display: flex;
       flex-direction: column;
       gap: 24px;
-      z-index: 0;
+      z-index: 2;
 
       h3 {
-        filter: brightness(1.5);
+        filter: brightness(1.4);
       }
     }
   }

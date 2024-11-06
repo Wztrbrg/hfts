@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   padding: 80px 16px;
-  background-color: #517751;
+  background-color: #4e8f4e;
   overflow: hidden;
 
   .bg-img-overlay {
@@ -21,9 +21,9 @@
     left: 0;
     background-image: url(../../images/about-hero.jpg);
     background-size: cover;
-    background-position: center bottom;
-    opacity: 0.3;
-    mix-blend-mode: overlay;
+    background-position: center;
+    opacity: 0.6;
+    mix-blend-mode: multiply;
   }
 
   .about-hero-content {
