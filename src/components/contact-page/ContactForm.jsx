@@ -50,7 +50,7 @@ const ContactForm = () => {
           <input type="text" name='e-postadress' placeholder='anders.persson@exempel.se'/>
           <label htmlFor="meddelande">Meddelande</label>
           <textarea type="text" rows={5} name='meddelande' placeholder='Här kan du skriva dina frågor eller funderingar'/>
-          <button className='s-btn acc'>SKICKA</button>
+          <button className='l-btn acc'>SKICKA</button>
         </form>
       </div>
     </section>
