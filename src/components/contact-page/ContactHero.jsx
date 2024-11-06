@@ -12,7 +12,7 @@ const ContactHero = () => {
         <header className='heading-container'>
           <h3 className="l-tag acc-txt">KONTAKTA OSS</h3>
           <h1 className="h-h lt-txt">
-            Har du frågor? Kontakta oss gärna via <span className='pr-txt'>E-post</span> eller <span className='pr-txt'>formuläret</span>
+            Välkommen att <span className='pr-txt'>kontakta oss</span> vid frågor och funderingar
           </h1>
         </header>
       </article>
