@@ -1,0 +1,34 @@
+@import "../globals/_variables";
+
+.report-content-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // background-color: $prim-color;
+
+  .content {
+    width: 100%;
+    max-width: $max-content-w;
+    padding: 120px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    // justify-content: center;
+
+    .content-container {
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .tag {
+        width: 120px;
+        height: 10px;
+        background-color: $acc-color;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

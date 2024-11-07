@@ -1,7 +1,14 @@
+import ReportForm from "../components/report-page/ReportForm";
+import ReportHero from "../components/report-page/ReportHero";
+import ReportContent from "../components/report-page/ReportContent";
 
 const Report = () => {
   return (
-    <h1>Felanmälan</h1>
+    <>
+      <ReportHero />
+      <ReportContent />
+      <ReportForm />
+    </>
   )
 }
 
