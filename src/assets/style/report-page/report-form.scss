@@ -1,0 +1,93 @@
+@import "../globals/_variables";
+
+.report-form-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $prim-color;
+
+  .content {
+    width: 100%;
+    max-width: $max-content-w;
+    padding: 120px 16px;
+    display: flex;
+    justify-content: center;
+    // gap: 100px;
+
+    .contact-info {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      .info-container {
+        display: flex;
+        gap: 28px;
+
+        .info-icon {
+          width: 32px;
+          height: 32px;
+          font-size: 32px;
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+
+      .double-input-row {
+        display: flex;
+        gap: 24px;
+        .left,
+        .right {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      label {
+        margin-bottom: 8px;
+        font-family: $heading-font;
+        font-size: $l-card-para;
+        letter-spacing: 1.4px;
+        color: $prim-color-dk;
+      }
+
+      input,
+      textarea {
+        margin-bottom: 24px;
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid $prim-color-dk;
+        border-radius: 6px;
+        font-size: $l-para;
+        font-family: $para-font;
+        font-weight: 400;
+        color: $txt-color;
+        padding: 12px 10px;
+
+        &:focus {
+          outline: none;
+          border: 2px solid $acc-color;
+        }
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      textarea {
+        resize: none;
+      }
+    }
+  }
+}
