@@ -8,39 +8,41 @@
   background-image: url(../../images/hero-bg.jpg);
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
 
   .hero-section-overlay {
     min-height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 16px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.548) 60%, #00000000);
-    background-color: #0001;
+    background: linear-gradient(115deg, rgba(0, 0, 0, 0.616) 60%, #00000000);
+    // background-color: rgba(21, 34, 21, 0.479);
+  }
 
-    .hero-content {
+  .hero-content {
+    position: relative;
+    width: 100%;
+    max-width: $max-content-w;
+    z-index: 3;
+
+    .hero-heading {
       width: 100%;
-      max-width: $max-content-w;
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
 
-      .hero-heading {
-        width: 100%;
-        max-width: 600px;
-        margin-bottom: 20px;
-      }
+    .hero-subheading {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
 
-      .hero-subheading {
-        width: 100%;
-        max-width: 600px;
-        margin-bottom: 30px;
-        font-weight: 300;
-      }
-
-      .hero-btn-container {
-        width: 100%;
-        max-width: 600px;
-        display: flex;
-        gap: 24px;
-      }
+    .hero-btn-container {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      gap: 24px;
     }
   }
 }

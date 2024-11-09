@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <>
       <section className="hero-section">
-        <div className="hero-section-overlay bg-dk-overlay">
+        <div className="hero-section-overlay bg-dk-overlay"></div>
           <article className="hero-content">
             <h1 className="hero-heading h-h lt-txt">
               Välkommen till Hållbar <span className="pr-txt">Fastighetsservice Syd</span> 
@@ -25,7 +25,6 @@ const HeroSection = () => {
               </Link>
             </div>
           </article>
-        </div>
       </section>
     </>
   )
