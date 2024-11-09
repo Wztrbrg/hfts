@@ -1,22 +1,22 @@
 import serviceImage1 from '../../assets/images/service-image1.jpg';
 import serviceImage2 from '../../assets/images/service-image2.jpg';
 import '../../assets/style/services-page/service-selections.scss';
+import { Link } from "react-router-dom";
 
 
 const ServiceSelections = () => {
   return (
     <div className="service-selections-section">
       <div className="service-selections-content">
-        {/* <h1 className="l-h dk-txt">Våra hållbara tjänster</h1> */}
 
         <article className="service-article">
           <img src={serviceImage1} alt="Exempelbild av tjänst som tillhandahålls" className="service-img" />
           <div className="service-text-container">
             <div className="heading-container">
-              <h2 className="m-h dk-txt service-heading">
+              <h2 className="m-h dp-txt service-heading">
                 Fastighetsskötsel & Drift
               </h2>
-              <p className="l-p dk-txt service-desc">
+              <p className="l-p dp-txt service-desc">
                 Vi tar hand om den dagliga skötseln av din 
                 fastighet för att säkerställa att allt fungerar 
                 smidigt och effektivt. Vårt team av erfarna 
@@ -30,8 +30,10 @@ const ServiceSelections = () => {
                 hållbar fastighetsdrift.
               </p>
             </div>
-            <div className="cta-container">
-              <button className="s-btn prim">Kontakta oss för mer info</button>
+            <div className="cta-container right">
+              <Link to={"/kontakt"}>
+                <button className="s-btn acc">Kontakta oss för mer info</button>
+              </Link>
             </div>
           </div>
         </article>
@@ -39,10 +41,10 @@ const ServiceSelections = () => {
         <article className="service-article">
           <div className="service-text-container">
             <div className="heading-container">
-              <h2 className="m-h dk-txt service-heading">
+              <h2 className="m-h dp-txt service-heading">
                 Fastighetsförvaltning & Projektledning
               </h2>
-              <p className="l-p dk-txt service-desc">
+              <p className="l-p dp-txt service-desc">
                 Vår tjänst inom fastighetsförvaltning och 
                 projektledning är utformad för att maximera värdet 
                 på din fastighet genom strategisk planering och 
@@ -57,7 +59,9 @@ const ServiceSelections = () => {
               </p>
             </div>
             <div className="cta-container">
-              <button className="s-btn prim">Kontakta oss för mer info</button>
+              <Link to={"/kontakt"}>
+                <button className="s-btn acc">Kontakta oss för mer info</button>
+              </Link>
             </div>
           </div>
           <img src={serviceImage2} alt="Exempelbild av tjänst som tillhandahålls" className="service-img" />
