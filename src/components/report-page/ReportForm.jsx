@@ -7,31 +7,44 @@ const ReportForm = () => {
   return (
     <section className="report-form-section">
       <div className="content">
-        <article className="contact-info">
-          <div className="info-container">
-            <FontAwesomeIcon icon={faPhone} className='info-icon acc-txt' />
-            <div className="info">
-              <h1 className="m-h dp-txt">Telefon</h1>
-              <a href="tel:+46720255360" className='l-p dp-txt'>072-0255360</a>
-            </div>
-          </div>
-          <div className="info-container">
-            <FontAwesomeIcon icon={faEnvelope} className='info-icon acc-txt' />
-            <div className="info">
-              <h1 className="m-h dp-txt">E-post</h1>
-              <a href="mailto:info@hallbarservice.se" className='l-p dp-txt'>info@hallbarservice.se</a>
-            </div>
-          </div>
-          <div className="info-container">
-            <FontAwesomeIcon icon={faLocationDot} className='info-icon acc-txt' />
-            <div className="info">
-              <h1 className="m-h dp-txt">Besöksadress</h1>
-              <p className="l-p dp-txt">
-                c/o R2 FASTIGHETER AB<br/>
-                GREV TUREGATAN 13 B<br/>
-                114 46 Stockholm
-              </p>
-            </div>
+        <article className="report-info">
+          <div className="info">
+            <h1 className="m-h dp-txt">Viktig information</h1>
+            <ul className="info-list">
+              <li className="info-item">
+                <p className="l-p dp-txt">
+                  Tänk på att en felanmälan är en beställning och kan 
+                  komma att leda till kostnader för dig som beställare.  
+                </p>
+              </li>
+              <li className="info-item">
+                <p className="l-p dp-txt">
+                  Du ansvarar själv för att ta reda på vilka kostnader 
+                  som åligger dig.
+                </p>
+              </li>
+              <li className="info-item">
+                <p className="l-p dp-txt">
+                  Akuta felanmälningar 
+                  hanteras utan dröjsmål vilket kan göra att mindre 
+                  akuta fel åtgärdas efter prioritet.
+                </p>
+              </li>
+              <li className="info-item">
+                <p className="l-p dp-txt">
+                  du som är bostadsrättsinnehavare 
+                  har rätt att anlita vilket företag du önskar för 
+                  arbeten inne i den egna bostadsrätten.
+                </p>
+              </li>
+              <li className="info-item">
+                <p className="l-p dp-txt">
+                  Vid felanmälan 
+                  och beställningar så behöver vi registrera dina 
+                  personuppgifter, mer information om detta <a href="#" className='dp-txt'>här</a>. 
+                </p>
+              </li>
+            </ul>
           </div>
         </article>
         <form>

@@ -12,29 +12,19 @@
     padding: 120px 16px;
     display: flex;
     justify-content: center;
-    // gap: 100px;
+    gap: 50px;
 
-    .contact-info {
+    .report-info {
       width: 40%;
       display: flex;
       flex-direction: column;
-      gap: 32px;
 
-      .info-container {
+      .info-list {
         display: flex;
-        gap: 28px;
-
-        .info-icon {
-          width: 32px;
-          height: 32px;
-          font-size: 32px;
-        }
-
-        .info {
-          display: flex;
-          flex-direction: column;
-          gap: 8px;
-        }
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px;
+        color: $acc-color;
       }
     }
 
@@ -102,13 +92,11 @@
       .contact-info {
         width: auto;
       }
-    
 
       form {
         width: 100%;
         max-width: 420px;
       }
-
     }
   }
 }
