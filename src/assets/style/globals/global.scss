@@ -77,6 +77,7 @@ button {
 .nav-txt {
   font-family: $heading-font;
   font-size: $nav-text;
+  letter-spacing: 2px;
 }
 
 // hero headings
@@ -143,35 +144,63 @@ button {
 // Buttons
 .l-btn {
   font-size: $l-btn-txt;
+  letter-spacing: 1.2px;
   border: none;
   padding: 14px 25px 10px 25px;
   cursor: pointer;
+  // scale: 1;
+  transition: all 0.2s;
+
+  &:hover {
+    // scale: 1.1;
+    transform: translateY(-4px);
+    filter: brightness(1.2);
+  }
 
   &.prim {
     background-color: $prim-color;
     color: $acc-color;
+
+    &:hover {
+      box-shadow: 0 25px 25px #70a06b83;
+    }
   }
 
   &.acc {
     background-color: $acc-color;
     color: $bg-color;
+
+    &:hover {
+      box-shadow: 0 25px 25px #45963c69;
+    }
   }
 }
 
 .m-btn {
   font-size: $m-btn-txt;
+  letter-spacing: 1.2px;
   border: none;
   padding: 13px 22px 9px 22px;
   cursor: pointer;
+  transition: all 0.3s;
 
   &.prim {
     background-color: $prim-color;
     color: $acc-color;
+
+    &:hover {
+      background-color: $acc-color;
+      color: $bg-color;
+    }
   }
 
   &.acc {
     background-color: $acc-color;
     color: $bg-color;
+
+    &:hover {
+      box-shadow: 0 15px 15px #45963c69;
+    }
   }
 }
 
@@ -181,10 +210,16 @@ button {
   padding: 12px 20px 8px 20px;
   letter-spacing: 1.3px;
   cursor: pointer;
+  transition: all 0.3s;
 
   &.prim {
     background-color: $prim-color;
     color: $acc-color;
+
+    &:hover {
+      background-color: $acc-color;
+      color: $bg-color;
+    }
   }
 
   &.acc {

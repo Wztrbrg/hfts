@@ -35,6 +35,24 @@
       .link-item {
         .site-link {
           text-decoration: none;
+          padding: 4px 0;
+          transition: color 0.2s ease-in-out;
+
+          &.active {
+            color: #c0e0b6;
+            border-bottom: 5px solid $acc-color;
+
+            &:hover {
+              color: #c0e0b6;
+              border-bottom: 5px solid $acc-color;
+              filter: brightness(1);
+            }
+          }
+
+          &:hover {
+            color: $acc-color;
+            filter: brightness(1.5);
+          }
         }
       }
     }
