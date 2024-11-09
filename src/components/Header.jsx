@@ -13,19 +13,19 @@ const Header = () => {
           </NavLink>
           <ul className="site-links">
             <li className="link-item">
-              <NavLink to={'/'} exact className="site-link nav-txt lt-txt" activeClassName="active">hem</NavLink>
+              <NavLink to={'/'} exact='true' className="site-link nav-txt lt-txt" activeclassname="active">hem</NavLink>
             </li>
             <li className="link-item">
-              <NavLink to={'/tjanster'} className="site-link nav-txt lt-txt" activeClassName="active">tjänster</NavLink>
+              <NavLink to={'/tjanster'} className="site-link nav-txt lt-txt" activeclassname="active">tjänster</NavLink>
             </li>
             {/* <li className="link-item">
-              <NavLink to={'/bostader-och-lokaler'} className="site-link nav-txt lt-txt" activeClassName="active">lediga bostäder & lokaler</NavLink>
+              <NavLink to={'/bostader-och-lokaler'} className="site-link nav-txt lt-txt" activeclassname="active">lediga bostäder & lokaler</NavLink>
             </li> */}
             <li className="link-item">
-              <NavLink to={'/om-oss'} className="site-link nav-txt lt-txt" activeClassName="active">om oss</NavLink>
+              <NavLink to={'/om-oss'} className="site-link nav-txt lt-txt" activeclassname="active">om oss</NavLink>
             </li>
             <li className="link-item">
-              <NavLink to={'/kontakt'} className="site-link nav-txt lt-txt" activeClassName="active">kontakt</NavLink>
+              <NavLink to={'/kontakt'} className="site-link nav-txt lt-txt" activeclassname="active">kontakt</NavLink>
             </li>
             <li className="link-item ">
               <NavLink to={'/felanmalan'}>
