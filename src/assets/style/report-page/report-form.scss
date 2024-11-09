@@ -91,3 +91,24 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .report-form-section {
+    .content {
+      flex-direction: column;
+      align-items: center;
+      gap: 100px;
+
+      .contact-info {
+        width: auto;
+      }
+    
+
+      form {
+        width: 100%;
+        max-width: 420px;
+      }
+
+    }
+  }
+}
