@@ -1,6 +1,6 @@
 import '../../assets/style/home-page/services-short.scss';
-import ServiceImageFirst from '../../assets/images/service-image1.jpg';
-import ServiceImageSecond from '../../assets/images/service-image2.jpg';
+import ServiceImageFirst from '../../assets/images/service-img5.jpeg';
+import ServiceImageSecond from '../../assets/images/service-img4.jpeg';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -8,7 +8,6 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 const ServicesShort = () => {
   return (
     <section className="services-short-section">
-      {/* <div className="wave-edge"></div> */}
       <h1 className="services-short-heading l-h dk-txt">Våra hållbara tjänster</h1>
       <div className="services-short-content">
         <article className="services-short-card">

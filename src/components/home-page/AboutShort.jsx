@@ -1,4 +1,7 @@
 import '../../assets/style/home-page/about-short.scss';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const AboutContent = () => {
   return (
@@ -8,10 +11,18 @@ const AboutContent = () => {
         <div className='about-short-content'>
             <div className="image"></div>
             <div className="text-wrapper">
-                <h1 className='l-h dk-txt'>vi på hållbar fastighetsservice syd</h1>
-                <p className='l-p dk-txt'>Är passionerade kring att skapa hållbara lösningar för framtidens fastigheter. Med över 20 års erfarenhet inom fastighetsförvaltning arbetar vi för att optimera både driftsäkerhet och miljöpåverkan. Vår vision är att vara en ledande aktör inom klimatsmart fastighetsförvaltning där vi genom innovativa energibesparingar och miljömedvetna åtgärder bidrar till en mer hållbar värld.</p>
-                <p className='l-p dk-txt'>Genom att samarbeta med experter inom grön teknik och certifieringar som LEED och BREEAM hjälper vi fastighetsägare att minska sina koldioxidutsläpp och maximera energieffektiviteten, utan att kompromissa med kvalitet eller komfort. För oss handlar hållbarhet inte bara om miljön, utan om långsiktig lönsamhet och ett ansvar gentemot kommande generationer.</p>
-                <p className='l-p dk-txt'>Låt oss förvalta din fastighet med samma omsorg för planeten som vi har för dig.</p>
+              <h3 className="l-tag acc-txt">
+                Om Hållbar Fastighetsservice Syd
+              </h3>
+              <h1 className="l-h dk-txt">
+                Din partner inom hållbar fastighets&shy;förvaltning
+              </h1>
+              <p className="l-p dk-txt">
+                Välkommen till Hållbar Fastighetsservice Syd – ett fastighetsförvaltningsbolag där hållbarhet och kvalitet står i fokus. Vi arbetar för att erbjuda långsiktiga och miljömedvetna lösningar för fastighetsägare och bostadsrättsföreningar som vill bidra till ett mer hållbart samhälle.
+              </p> 
+              <Link to={'/om-oss'} >
+                <h3 className='c-h acc-txt'>Läs mer <FontAwesomeIcon icon={faArrowRight} /></h3>
+              </Link>  
             </div>
         </div>
 

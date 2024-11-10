@@ -19,14 +19,14 @@
       max-height: 500px;
       display: flex;
       justify-content: space-between;
-      background-color: $prim-color;
+      background-color: #daf0da;
       overflow: hidden;
 
       .service-img {
         width: 60%;
         height: 100%;
         object-fit: cover;
-        object-position: center top;
+        object-position: center;
       }
 
       .service-text-container {
@@ -79,6 +79,7 @@
         .service-img {
           width: 100%;
           max-height: 300px;
+          object-position: center -400px;
         }
 
         .service-text-container {
@@ -104,6 +105,12 @@
     padding: 16px;
     .service-selections-content {
       gap: 56px;
+
+      .service-article {
+        .service-img {
+          object-position: center bottom;
+        }
+      }
     }
   }
 }

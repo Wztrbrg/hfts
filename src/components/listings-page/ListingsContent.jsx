@@ -1,5 +1,5 @@
 import '../../assets/style/listings-page/listings-content.scss';
-import Preview from '../../assets/images/listing-img.jpeg';
+// import Preview from '../../assets/images/listing-img.jpg';
 
 const ListingsContent = () => {
 
@@ -77,7 +77,7 @@ const ListingsContent = () => {
           <h2 className="m-h dk-txt">{listings.length} lediga lägenheter</h2>
           {listings.map((listing) => (
             <article key={listing.id} className="listing-card">
-              <img src={Preview} alt="Bild på lägenhetshus" />
+              {/* <img src={Preview} alt="Bild på lägenhetshus" /> */}
               <div className="text">
                 <div className="card-header">
                   <p className="c-p dk-txt">{listing.city}</p>

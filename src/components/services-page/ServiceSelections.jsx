@@ -1,6 +1,6 @@
-import serviceImage1 from '../../assets/images/service-image1.jpg';
-import serviceImage2 from '../../assets/images/service-image2.jpg';
 import '../../assets/style/services-page/service-selections.scss';
+import serviceImage1 from '../../assets/images/service-img5.jpeg';
+import serviceImage2 from '../../assets/images/service-img4.jpeg';
 import { Link } from "react-router-dom";
 
 
