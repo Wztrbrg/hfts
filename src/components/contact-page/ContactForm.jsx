@@ -1,9 +1,34 @@
 import '../../assets/style/contact-page/contact-form.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 
 const ContactForm = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    console.log("Firstname:", form.current.firstname.value);
+    console.log("Lastname:", form.current.lastname.value);
+    console.log("Email:", form.current.email.value);
+    console.log("Message:", form.current.message.value);
+    
+    emailjs
+      .sendForm('service_m0cc7hc', 'template_nqbt35j', form.current, 'wwJg1FgSLud6yDF7W')
+      .then(
+        () => {
+          console.log('Email successfully sent');
+        },
+        (error) => {
+          console.log('Email service failed: ', error.text);
+        },
+      );
+  };
+
   return (
     <section className="contact-form-section">
       <div className="content">
@@ -34,23 +59,23 @@ const ContactForm = () => {
             </div>
           </div>
         </article>
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <div className='double-input-row'>
             <div className="left">
               <label htmlFor="förnamn">Förnamn</label>
-              <input type="text" name='förnamn' placeholder='Anders' />
+              <input type="text" name='firstname' placeholder='Anders' />
             </div>
             <div className="right">
               <label htmlFor="efternamn">Efternamn</label>
-              <input type="text" name='efternamn' placeholder='Persson' />
+              <input type="text" name='lastname' placeholder='Persson' />
             </div>
           </div>
             
           <label htmlFor="e-postadress">E-postadress</label>
-          <input type="text" name='e-postadress' placeholder='anders.persson@exempel.se'/>
+          <input type="text" name='email' placeholder='anders.persson@exempel.se'/>
           <label htmlFor="meddelande">Meddelande</label>
-          <textarea type="text" rows={5} name='meddelande' placeholder='Här kan du skriva dina frågor eller funderingar'/>
-          <button className='l-btn acc'>SKICKA</button>
+          <textarea type="text" rows={5} name='message' placeholder='Här kan du skriva dina frågor eller funderingar'/>
+          <button type="submit" className='l-btn acc'>SKICKA</button>
         </form>
       </div>
     </section>
