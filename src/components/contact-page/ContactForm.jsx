@@ -2,10 +2,12 @@ import '../../assets/style/contact-page/contact-form.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 
 const ContactForm = () => {
+
+  const [isSent, setIsSent] = useState(false);
 
   const form = useRef();
 
@@ -22,6 +24,7 @@ const ContactForm = () => {
       .then(
         () => {
           console.log('Email successfully sent');
+          setIsSent(true);
         },
         (error) => {
           console.log('Email service failed: ', error.text);
@@ -75,6 +78,9 @@ const ContactForm = () => {
           <input type="text" name='email' placeholder='anders.persson@exempel.se'/>
           <label htmlFor="meddelande">Meddelande</label>
           <textarea type="text" rows={5} name='message' placeholder='Här kan du skriva dina frågor eller funderingar'/>
+          {isSent &&
+            <p className="l-p acc-txt"><strong>Tack för ditt meddelande!</strong></p>
+          }
           <button type="submit" className='l-btn acc'>SKICKA</button>
         </form>
       </div>

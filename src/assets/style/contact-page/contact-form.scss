@@ -87,10 +87,13 @@
       textarea {
         resize: none;
       }
+
+      p {
+        margin-bottom: 24px;
+      }
     }
   }
 }
-
 
 @media (max-width: 768px) {
   .contact-form-section {
@@ -102,13 +105,11 @@
       .contact-info {
         width: auto;
       }
-    
 
       form {
         width: 100%;
         max-width: 420px;
       }
-
     }
   }
 }
