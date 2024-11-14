@@ -12,7 +12,7 @@
   .services-short-heading {
     width: 100%;
     text-align: center;
-    z-index: 10;
+    z-index: 2;
   }
 
   .services-short-content {
@@ -34,7 +34,7 @@
         height: 100%;
         max-height: 240px;
         object-fit: cover;
-        object-position: center -160px;
+        object-position: center bottom;
       }
 
       .text-container {
@@ -68,6 +68,23 @@
           text-decoration: none;
           font-size: $l-card-para;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .services-short-section {
+    padding: 16px;
+    .services-short-content {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+
+      .services-short-card {
+        width: 100% !important;
+        max-width: unset;
       }
     }
   }

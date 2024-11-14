@@ -10,9 +10,13 @@
   align-items: center;
   padding: 0 16px;
   padding-top: 16px;
-  padding-bottom: 32px;
+  padding-bottom: 50px;
   z-index: 5;
-  background: linear-gradient(to bottom, #00000085 1%, #ffffff00);
+  background: linear-gradient(to bottom, #000000af, #ffffff00);
+
+  .menu-btn {
+    display: none;
+  }
 
   .top-nav {
     width: 100%;
@@ -70,6 +74,112 @@
         .link-item {
           .site-link {
             color: $txt-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-header {
+    position: fixed;
+    justify-content: flex-end;
+    padding: 16px;
+    transition: 0.2s;
+    background: none;
+    background-color: #00000017;
+    backdrop-filter: blur(10px);
+
+    &.open {
+      background-color: $txt-color;
+    }
+
+    .menu-btn {
+      position: absolute;
+      top: 28px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 32px;
+      height: 28px;
+      background-color: transparent;
+      border: none;
+      z-index: 20;
+      cursor: pointer;
+
+      .btn-line {
+        width: 100%;
+        height: 3px;
+        background-color: $bg-color;
+        transition: rotate 0.2s ease;
+      }
+
+      &.close {
+        right: 8px;
+        .btn-line {
+          &:nth-child(1) {
+            transform: translateY(18px);
+            rotate: 45deg;
+          }
+          &:nth-child(2) {
+            display: none;
+          }
+          &:nth-child(3) {
+            transform: translateY(-18px);
+            rotate: -45deg;
+          }
+        }
+      }
+    }
+
+    .top-nav {
+      .site-logo {
+        position: relative;
+        height: 56px;
+        filter: brightness(4);
+        z-index: 20;
+      }
+
+      .site-links {
+        height: 0px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        background-color: $txt-color;
+        z-index: 10;
+        transition: 0.2s ease;
+
+        .link-item {
+          display: none;
+
+          .site-link {
+            font-size: 28px;
+
+            &.active {
+              border-bottom: 4px solid $acc-color;
+            }
+          }
+        }
+
+        &.open {
+          height: 100dvh;
+          justify-content: center;
+          gap: 15%;
+          padding-top: 84px;
+          padding-bottom: 40px;
+
+          button {
+            width: 100%;
+            font-size: 28px;
+          }
+
+          .link-item {
+            display: block;
           }
         }
       }
