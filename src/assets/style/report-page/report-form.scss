@@ -82,20 +82,40 @@
   }
 }
 
+// @media (max-width: 768px) {
+//   .report-form-section {
+//     .content {
+//       flex-direction: column;
+//       align-items: center;
+//       gap: 100px;
+
+//       .contact-info {
+//         width: auto;
+//       }
+
+//       form {
+//         width: 100%;
+//         max-width: 420px;
+//       }
+//     }
+//   }
+// }
+
 @media (max-width: 768px) {
   .report-form-section {
     .content {
-      flex-direction: column;
-      align-items: center;
-      gap: 100px;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 40px 8px;
 
-      .contact-info {
-        width: auto;
+      .report-info {
+        width: 100%;
       }
 
       form {
         width: 100%;
-        max-width: 420px;
+        // max-width: 420px;
       }
     }
   }

@@ -218,3 +218,67 @@
     }
   }
 }
+
+@media screen and (max-width: 860px) {
+  .about-content-section {
+    .content {
+      .about-card-full {
+        padding: 40px 8px;
+        flex-direction: column;
+        gap: 24px;
+
+        .about-card-img {
+          width: 100%;
+          height: 300px;
+        }
+
+        .text {
+          width: 100%;
+        }
+      }
+
+      .about-card-section {
+        padding: 40px 8px;
+        gap: 40px;
+        .about-card {
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+    }
+
+    .approach-section {
+      padding: 40px 8px;
+
+      header {
+        margin-bottom: 20px;
+      }
+
+      .approach-grid {
+        flex-direction: column;
+        max-width: 700px;
+
+        .approach-box {
+          width: 100%;
+          padding: 20px 8px;
+        }
+      }
+    }
+
+    .why-section {
+      padding: 40px 8px;
+
+      .why-content {
+        flex-direction: column;
+
+        .heading-container {
+          width: 100%;
+        }
+
+        .text {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

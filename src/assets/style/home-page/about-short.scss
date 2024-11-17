@@ -53,7 +53,7 @@
 @media (max-width: 1024px) {
   .about-short-section {
     .about-short-content {
-      flex-direction: column-reverse;
+      flex-direction: column;
 
       .image {
         width: 100%;
@@ -71,4 +71,7 @@
 
 /* Media query for mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
+  .about-short-section {
+    padding: 40px 8px;
+  }
 }

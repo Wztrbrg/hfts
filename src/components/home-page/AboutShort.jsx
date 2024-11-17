@@ -21,7 +21,7 @@ const AboutContent = () => {
                 Välkommen till Hållbar Fastighetsservice Syd – ett fastighetsförvaltningsbolag där hållbarhet och kvalitet står i fokus. Vi arbetar för att erbjuda långsiktiga och miljömedvetna lösningar för fastighetsägare och bostadsrättsföreningar som vill bidra till ett mer hållbart samhälle.
               </p> 
               <Link to={'/om-oss'} >
-                <h3 className='c-h acc-txt'>Läs mer <FontAwesomeIcon icon={faArrowRight} /></h3>
+                <h3 className='l-p acc-txt'>Läs mer <FontAwesomeIcon icon={faArrowRight} /></h3>
               </Link>  
             </div>
         </div>

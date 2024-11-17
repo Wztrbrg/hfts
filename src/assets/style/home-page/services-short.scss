@@ -75,7 +75,11 @@
 
 @media screen and (max-width: 635px) {
   .services-short-section {
-    padding: 16px;
+    padding: 40px 8px;
+
+    .services-short-heading {
+      text-align: left;
+    }
     .services-short-content {
       flex-direction: column;
       justify-content: flex-start;

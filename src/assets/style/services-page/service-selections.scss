@@ -85,7 +85,7 @@
         .service-text-container {
           width: 100%;
           gap: 50px;
-          padding: 24px;
+          padding: 20px;
         }
 
         &:nth-child(2) {
@@ -102,9 +102,9 @@
 
 @media screen and (max-width: 768px) {
   .service-selections-section {
-    padding: 16px;
+    padding: 40px 8px;
     .service-selections-content {
-      gap: 56px;
+      gap: 40px;
 
       .service-article {
         .service-img {

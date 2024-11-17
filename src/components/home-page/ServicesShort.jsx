@@ -34,7 +34,7 @@ const ServicesShort = () => {
               tid och pengar samtidigt som vi bidrar till en 
               hållbar fastighetsdrift.
             </p>
-            <Link to={'/bostader-och-lokaler'}>Läs mer <FontAwesomeIcon icon={faArrowRight} /></Link>
+            <Link to={'/tjanster'}>Läs mer <FontAwesomeIcon icon={faArrowRight} /></Link>
           </div>
         </article>
         <article className="services-short-card">
@@ -61,7 +61,7 @@ const ServicesShort = () => {
               lösningar, vilket skapar långsiktiga vinster både 
               för din fastighet och miljön.
             </p>
-            <Link to={'/bostader-och-lokaler'}>Läs mer <FontAwesomeIcon icon={faArrowRight} /></Link>
+            <Link to={'/tjanster'}>Läs mer <FontAwesomeIcon icon={faArrowRight} /></Link>
           </div>
         </article>
       </div>

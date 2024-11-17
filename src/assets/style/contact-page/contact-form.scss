@@ -99,8 +99,9 @@
   .contact-form-section {
     .content {
       flex-direction: column;
-      align-items: center;
-      gap: 100px;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 40px 8px;
 
       .contact-info {
         width: auto;
@@ -108,7 +109,7 @@
 
       form {
         width: 100%;
-        max-width: 420px;
+        // max-width: 420px;
       }
     }
   }

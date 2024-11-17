@@ -75,7 +75,22 @@
 }
 
 @media screen and (max-width: 768px) {
-  .fade-out-box {
-    display: none;
+  .testimonial-section {
+    padding: 40px 8px;
+    .testimonial-section-content {
+      flex-direction: column-reverse;
+
+      .testimonial-text {
+        width: 100%;
+      }
+
+      .testimonial-container {
+        width: 100%;
+      }
+
+      .fade-out-box {
+        display: none;
+      }
+    }
   }
 }

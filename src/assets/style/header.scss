@@ -170,16 +170,17 @@
           height: 100dvh;
           justify-content: center;
           gap: 15%;
-          padding-top: 84px;
-          padding-bottom: 40px;
+          padding: 40px 16px;
+          padding-top: 86px;
 
           button {
-            width: 100%;
-            font-size: 28px;
+            width: 100% !important;
+            font-size: 24px;
           }
 
           .link-item {
             display: block;
+            width: 100%;
           }
         }
       }
