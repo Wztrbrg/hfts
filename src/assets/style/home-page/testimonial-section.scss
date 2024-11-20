@@ -79,9 +79,15 @@
     padding: 40px 8px;
     .testimonial-section-content {
       flex-direction: column-reverse;
+      align-items: center;
 
       .testimonial-text {
         width: 100%;
+        text-align: center;
+
+        button {
+          width: 100%;
+        }
       }
 
       .testimonial-container {

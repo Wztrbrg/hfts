@@ -17,6 +17,7 @@ const CardSlider = () => {
       {
         breakpoint: 768, // Adjust for smaller screens
         settings: {
+          // centerMode: true,
           slidesToShow: 1,
           slidesToScroll: 1,
         },

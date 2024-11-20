@@ -10,12 +10,14 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Report from './pages/Report'
 import Footer from './components/Footer'
+import CookiePopup from './components/CookiePopup';
 
 
 function App() {
 
   return (
     <>
+    <CookiePopup />
     <Header/>
     <Routes>
       <Route path='/' element={<Home />} />
