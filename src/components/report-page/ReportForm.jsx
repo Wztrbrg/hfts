@@ -1,9 +1,38 @@
 import '../../assets/style/report-page/report-form.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import emailjs from '@emailjs/browser';
+import { useRef, useState } from 'react';
 
 
 const ReportForm = () => {
+
+  const [isSent, setIsSent] = useState(false);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    console.log("Firstname:", form.current.förnamn.value);
+    console.log("Lastname:", form.current.efternamn.value);
+    console.log("Telefon:", form.current.telefon.value);
+    console.log("Email:", form.current.email.value);
+    console.log("Adress:", form.current.adress.value);
+    console.log("Lägenhet:", form.current.lagenhetsnummer.value);
+    console.log("Beskrivning:", form.current.beskrivning.value);
+    
+    emailjs
+      .sendForm('service_m0cc7hc', 'template_nqbt35j', form.current, 'wwJg1FgSLud6yDF7W')
+      .then(
+        () => {
+          console.log('Email successfully sent');
+          setIsSent(true);
+        },
+        (error) => {
+          console.log('Email service failed: ', error.text);
+        },
+      );
+  };
+
   return (
     <section className="report-form-section">
       <div className="content">
@@ -47,22 +76,30 @@ const ReportForm = () => {
             </ul>
           </div>
         </article>
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <div className='double-input-row'>
             <div className="left">
               <label htmlFor="förnamn">Förnamn</label>
-              <input type="text" name='förnamn' placeholder='Anders' />
+              <input type="text" name='förnamn' placeholder='Anders' required />
             </div>
             <div className="right">
               <label htmlFor="efternamn">Efternamn</label>
-              <input type="text" name='efternamn' placeholder='Persson' />
+              <input type="text" name='efternamn' placeholder='Persson' required />
             </div>
           </div>
-            
-          <label htmlFor="e-postadress">E-postadress</label>
-          <input type="text" name='e-postadress' placeholder='anders.persson@exempel.se'/>
-          <label htmlFor="meddelande">Meddelande</label>
-          <textarea type="text" rows={5} name='meddelande' placeholder='Här kan du skriva dina frågor eller funderingar'/>
+          <label htmlFor="telefon">Telefonnummer</label>
+          <input type="tel" name="telefon" placeholder='070-123 45 67' required />
+          <label htmlFor="email">E-postadress</label>
+          <input type="text" name='email' placeholder='anders.persson@exempel.se' required />
+          <label htmlFor="adress">Adress</label>
+          <input type="text" name="adress" placeholder='Gröna Gatan 1b' required />
+          <label htmlFor="lagenhetsnr">Lägenhetsnummer</label>
+          <input type="text" name="lagenhetsnummer" placeholder='1101' required />
+          <label htmlFor="beskrivning">Beskrivning</label>
+          <textarea type="text" rows={5} name='beskrivning' placeholder='Här beskriver du felet. Exempelvis: "Droppande kran i köket"' required />
+          {isSent &&
+            <p className="l-p acc-txt"><strong>Vi har tagit emot din felanmälan och kommer att hantera den så snart som möjligt!</strong></p>
+          }
           <button className='l-btn acc'>SKICKA</button>
         </form>
       </div>
