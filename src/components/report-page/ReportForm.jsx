@@ -12,16 +12,16 @@ const ReportForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    console.log("Firstname:", form.current.förnamn.value);
-    console.log("Lastname:", form.current.efternamn.value);
-    console.log("Telefon:", form.current.telefon.value);
-    console.log("Email:", form.current.email.value);
-    console.log("Adress:", form.current.adress.value);
-    console.log("Lägenhet:", form.current.lagenhetsnummer.value);
-    console.log("Beskrivning:", form.current.beskrivning.value);
+    console.log("Firstname:", form.current.user_name.value);
+    console.log("Lastname:", form.current.user_lastname.value);
+    console.log("Telefon:", form.current.user_phone.value);
+    console.log("Email:", form.current.user_email.value);
+    console.log("Adress:", form.current.user_address.value);
+    console.log("Lägenhet:", form.current.user_apartment.value);
+    console.log("Beskrivning:", form.current.user_description.value);
     
     emailjs
-      .sendForm('service_m0cc7hc', 'template_nqbt35j', form.current, 'wwJg1FgSLud6yDF7W')
+      .sendForm('service_felanmalan', 'template_felanmalan', form.current, 'wwJg1FgSLud6yDF7W')
       .then(
         () => {
           console.log('Email successfully sent');
@@ -78,24 +78,24 @@ const ReportForm = () => {
         <form ref={form} onSubmit={sendEmail}>
           <div className='double-input-row'>
             <div className="left">
-              <label htmlFor="förnamn">Förnamn</label>
-              <input type="text" name='förnamn' placeholder='Anders' required />
+              <label htmlFor="user_name">Förnamn</label>
+              <input type="text" id='user_name' name='user_name' placeholder='Anders' required />
             </div>
             <div className="right">
-              <label htmlFor="efternamn">Efternamn</label>
-              <input type="text" name='efternamn' placeholder='Persson' required />
+              <label htmlFor="user_lastname">Efternamn</label>
+              <input type="text" id='user_lastname' name='user_lastname' placeholder='Persson' required />
             </div>
           </div>
-          <label htmlFor="telefon">Telefonnummer</label>
-          <input type="tel" name="telefon" placeholder='070-123 45 67' required />
-          <label htmlFor="email">E-postadress</label>
-          <input type="text" name='email' placeholder='anders.persson@exempel.se' required />
-          <label htmlFor="adress">Adress</label>
-          <input type="text" name="adress" placeholder='Gröna Gatan 1b' required />
-          <label htmlFor="lagenhetsnr">Lägenhetsnummer</label>
-          <input type="text" name="lagenhetsnummer" placeholder='1101' required />
-          <label htmlFor="beskrivning">Beskrivning</label>
-          <textarea type="text" rows={5} name='beskrivning' placeholder='Här beskriver du felet. Exempelvis: "Droppande kran i köket"' required />
+          <label htmlFor="user_phone">Telefonnummer</label>
+          <input type="tel" id='user_phone' name="user_phone" placeholder='070-123 45 67' required />
+          <label htmlFor="user_email">E-postadress</label>
+          <input type="text" id='user_email' name='user_email' placeholder='anders.persson@exempel.se' required />
+          <label htmlFor="user_address">Adress</label>
+          <input type="text" id='user_address' name="user_address" placeholder='Gröna Gatan 1b' required />
+          <label htmlFor="user_apartment">Lägenhetsnummer</label>
+          <input type="text" id='user_apartment' name="user_apartment" placeholder='1101' required />
+          <label htmlFor="user_description">Beskrivning</label>
+          <textarea type="text" id='user_description' rows={5} name='user_description' placeholder='Här beskriver du felet. Exempelvis: "Droppande kran i köket"' required />
           {isSent &&
             <p className="l-p acc-txt"><strong>Vi har tagit emot din felanmälan och kommer att hantera den så snart som möjligt!</strong></p>
           }

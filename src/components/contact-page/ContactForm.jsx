@@ -14,13 +14,14 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    console.log("Firstname:", form.current.firstname.value);
-    console.log("Lastname:", form.current.lastname.value);
-    console.log("Email:", form.current.email.value);
-    console.log("Message:", form.current.message.value);
+    console.log("Firstname:", form.current.user_name.value);
+    console.log("Lastname:", form.current.user_lastname.value);
+    console.log("Telefon:", form.current.user_phone.value);
+    console.log("Email:", form.current.user_email.value);
+    console.log("Message:", form.current.user_message.value);
     
     emailjs
-      .sendForm('service_m0cc7hc', 'template_nqbt35j', form.current, 'wwJg1FgSLud6yDF7W')
+      .sendForm('service_kontakt', 'template_kontakt', form.current, 'wwJg1FgSLud6yDF7W')
       .then(
         () => {
           console.log('Email successfully sent');
@@ -64,19 +65,21 @@ const ContactForm = () => {
         <form ref={form} onSubmit={sendEmail}>
           <div className='double-input-row'>
             <div className="left">
-              <label htmlFor="förnamn">Förnamn</label>
-              <input type="text" name='firstname' placeholder='Anders' />
+              <label htmlFor="user_name">Förnamn</label>
+              <input type="text" name='user_name' id='user_name' placeholder='Anders' />
             </div>
             <div className="right">
-              <label htmlFor="efternamn">Efternamn</label>
-              <input type="text" name='lastname' placeholder='Persson' />
+              <label htmlFor="user_lastname">Efternamn</label>
+              <input type="text" name='user_lastname' id='user_lastname' placeholder='Persson' />
             </div>
           </div>
             
-          <label htmlFor="e-postadress">E-postadress</label>
-          <input type="text" name='email' placeholder='anders.persson@exempel.se'/>
-          <label htmlFor="meddelande">Meddelande</label>
-          <textarea type="text" rows={5} name='message' placeholder='Här kan du skriva dina frågor eller funderingar'/>
+          <label htmlFor="user_phone">Telefonnummer</label>
+          <input type="tel" id='user_phone' name="user_phone" placeholder='070-123 45 67' required />
+          <label htmlFor="user_email">E-postadress</label>
+          <input type="text" name='user_email' id='user_email' placeholder='anders.persson@exempel.se'/>
+          <label htmlFor="user_message">Meddelande</label>
+          <textarea type="text" rows={5} name='user_message' id='user_message' placeholder='Här kan du skriva dina frågor eller funderingar'/>
           {isSent &&
             <p className="l-p acc-txt"><strong>Tack för ditt meddelande!</strong></p>
           }
