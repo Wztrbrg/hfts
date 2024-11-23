@@ -40,7 +40,7 @@ const Footer = () => {
                 <div className="footer-col">
                     <h2 className="lf-h">KONTAKTA OSS</h2>
                     <p className="lf-p">
-                        Har du frågor? Kontakta oss gärna via e-post på <a href="mailto:info@hallbarservice.se">info@hallbarservice.se</a><br /> Eller ring oss på <a href="tel:+46720255360">072 025 53 60</a><br/>Du hittar oss på c/o R2 FASTIGHETER AB<br/>GREV TUREGATAN 13 B<br/>114 46 Stockholm<br/>Vi ser fram emot att höra från dig!
+                        Har du frågor? Kontakta oss gärna via e-post på <a href="mailto:info@hallbarservice.se">info@hallbarservice.se</a><br /> Eller ring oss på <a href="tel:040302000">040-30 20 00</a><br/>Du hittar oss på Amiralsgatan 68<br/>214 37 MALMÖ<br/>Vi ser fram emot att höra från dig!
                     </p>
                 </div>
 

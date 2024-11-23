@@ -40,7 +40,7 @@ const ContactForm = () => {
             <FontAwesomeIcon icon={faPhone} className='info-icon acc-txt' />
             <div className="info">
               <h1 className="m-h dp-txt">Telefon</h1>
-              <a href="tel:+46720255360" className='l-p dp-txt'>072-0255360</a>
+              <a href="tel:040302000" className='l-p dp-txt'>040-30 20 00</a>
             </div>
           </div>
           <div className="info-container">
@@ -55,9 +55,8 @@ const ContactForm = () => {
             <div className="info">
               <h1 className="m-h dp-txt">Besöksadress</h1>
               <p className="l-p dp-txt">
-                c/o R2 FASTIGHETER AB<br/>
-                GREV TUREGATAN 13 B<br/>
-                114 46 Stockholm
+                Amiralsgatan 68<br/>
+                214 37 MALMÖ
               </p>
             </div>
           </div>

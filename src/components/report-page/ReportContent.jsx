@@ -13,7 +13,7 @@ const ReportContent = () => {
             Vi ser fram emot att hjälpa dig med dina fastighetsbehov
           </h1>
           <p className="l-p dk-txt">
-            Använd formuläret nedan eller <a href="tel:+720255360" className='dk-txt'>ring oss</a>.
+            Använd formuläret nedan eller <a href="tel:040302000" className='dk-txt'>ring oss</a>.
             Vid <strong>akuta</strong> ärenden efter normal arbetstid ska ni ringa <a href="tel:+#" className='dk-txt'>jouren</a>.
           </p>
         </article>

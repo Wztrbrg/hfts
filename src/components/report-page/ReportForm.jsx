@@ -61,7 +61,7 @@ const ReportForm = () => {
               </li>
               <li className="info-item">
                 <p className="l-p dp-txt">
-                  du som är bostadsrättsinnehavare 
+                  Du som är bostadsrättsinnehavare 
                   har rätt att anlita vilket företag du önskar för 
                   arbeten inne i den egna bostadsrätten.
                 </p>
@@ -70,8 +70,7 @@ const ReportForm = () => {
                 <p className="l-p dp-txt">
                   Vid felanmälan 
                   och beställningar så behöver vi registrera dina 
-                  personuppgifter, mer information om detta <a href="#" className='dp-txt'>här</a>. 
-                </p>
+                  personuppgifter, dessa raderas löpande ur våra system efter att ärendet har hanterats</p>
               </li>
             </ul>
           </div>
