@@ -15,18 +15,32 @@
     gap: 40px;
 
     .image {
-      width: 50%;
-      min-height: 450px;
-      background-image: url(../../../assets/images/about-content-img.jpeg);
-      background-size: cover;
-      background-position: center;
+      position: relative;
+      min-width: 355px;
+      height: 355px;
+      // min-height: 450px;
+      background-image: url(../../../assets/images/about-portrait.png);
+      background-size: contain;
+      background-position: center top;
+      background-repeat: no-repeat;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(30deg, #7ceb66d5 30%, #ffffff00);
+        mix-blend-mode: screen;
+      }
     }
 
     .text-wrapper {
       position: relative;
       display: flex;
       flex-direction: column;
-      width: 50%;
+      // width: 100%;
       max-width: 480px;
 
       h3 {
@@ -50,20 +64,24 @@
 }
 
 /* Media query for tablets (max-width: 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 821px) {
   .about-short-section {
     .about-short-content {
       flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
 
       .image {
-        width: 100%;
-        min-height: 20rem;
+        // width: 50%;
+        // min-height: 20rem;
         background-size: cover;
-        background-position: center;
+        background-position: center top;
       }
 
       .text-wrapper {
         width: auto;
+        align-items: center;
+        text-align: center;
       }
     }
   }

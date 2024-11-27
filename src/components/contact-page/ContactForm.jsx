@@ -41,14 +41,14 @@ const ContactForm = () => {
             <FontAwesomeIcon icon={faPhone} className='info-icon acc-txt' />
             <div className="info">
               <h1 className="m-h dp-txt">Telefon</h1>
-              <a href="tel:040302000" className='l-p dp-txt'>040-30 20 00</a>
+              <a href="tel:040302000" className='l-p dp-txt' target="blank">040-30 20 00</a>
             </div>
           </div>
           <div className="info-container">
             <FontAwesomeIcon icon={faEnvelope} className='info-icon acc-txt' />
             <div className="info">
               <h1 className="m-h dp-txt">E-post</h1>
-              <a href="mailto:info@hallbarservice.se" className='l-p dp-txt'>info@hallbarservice.se</a>
+              <a href="mailto:info@hallbarservice.se" className='l-p dp-txt' target="blank">info@hallbarservice.se</a>
             </div>
           </div>
           <div className="info-container">

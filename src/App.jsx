@@ -11,6 +11,7 @@ import Contact from './pages/Contact'
 import Report from './pages/Report'
 import Footer from './components/Footer'
 import CookiePopup from './components/CookiePopup';
+import GDPR from './pages/GDPR';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Route path='/om-oss' element={<About />} />
       <Route path='/kontakt' element={<Contact />} />
       <Route path='/felanmalan' element={<Report />} />
+      <Route path='/GDPR' element={<GDPR />} />
     </Routes>
     <Footer/>
     </>

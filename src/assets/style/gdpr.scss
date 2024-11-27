@@ -1,0 +1,33 @@
+@import "./globals/_variables";
+
+.GDPR-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 80px 40px;
+  padding-top: 180px;
+
+  .GDPR-content {
+    width: 100%;
+    max-width: $max-content-w;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .GDPR-container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      ul {
+        padding: 0 22px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .GDPR-section {
+    padding: 180px 8px;
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const CookiePopup = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -28,7 +29,7 @@ const CookiePopup = () => {
         <p className="c-p dk-txt">
           Den här hemsidan använder cookies för att förbättra din upplevelse. 
           Vi lagrar ingen personlig data. Du kan acceptera eller neka cookies,
-          eller läsa mer <a href="#" className="c-p acc-txt">här</a>
+          eller läsa mer <Link to={"/GDPR"} className="c-p acc-txt">här</Link>
         </p>
         <div style={buttonContainerStyle}>
           <button className="s-btn acc" onClick={handleAccept}>
