@@ -21,21 +21,15 @@ const AboutContent = () => {
             </p>
           </header>
           <header className="text full">
-            {/* <h1 className="m-h dk-txt">
-              Hållbar Fastighetsservice Syd AB
-            </h1> */}
             <p className="l-p dk-txt">
               <span className="m-h dk-txt">Hållbar Fastighetsservice Syd AB </span>
-              grundades 2024 med en tydlig vision: att erbjuda fastighetsservice som möter de verkliga behoven och överträffar förväntningarna. Vi såg att marknaden ofta erbjöd standardlösningar som inte alltid speglade kundernas önskemål. Därför har vi skapat en verksamhet som sätter service i centrum och arbetar aktivt för att bidra till FN :s globala mål i Agenda 2030.
+              grundades 2024 med en tydlig vision: att erbjuda fastighetsservice som möter de verkliga behoven och överträffar förväntningarna. Vi såg att marknaden ofta erbjöd standardlösningar som inte alltid speglade kundernas önskemål. Därför har vi skapat en verksamhet som sätter service i centrum och arbetar aktivt för att bidra till FN:s globala mål i Agenda 2030.
               Vi strävar alltid efter 100% nöjda kunder och ser möjligheter där andra ser hinder. Vårt mål är att bygga långsiktiga och hållbara samarbeten som skapar värde för både kunder och miljö.
             </p>
           </header>
           <header className="text full">
-            {/* <h1 className="m-h dk-txt">
-              Grundaren Andreas Jamous
-            </h1> */}
             <p className="l-p dk-txt">
-              <span className="m-h dk-txt">Grundaren Andreas Jamous </span>har 12 års erfarenhet inom fastighetsservice och har under åren byggt upp en djup förståelse för branschens utmaningar och kundernas behov. Med ett oslagbart nätverk och noggrant utvalda leverantörer samarbetar vi enbart med de bästa i branschen. Tillsammans levererar tjänster av högsta kvalitet, alltid med hållbarhet och klimatsmart tänkande i fokus.
+              <span className="m-h dk-txt">Grundaren Andreas Jamous </span>är utbildad fastighetsingenjör och har 12 års erfarenhet inom fastighetsservice och har under åren byggt upp en djup förståelse för branschens utmaningar och kundernas behov. Med ett oslagbart nätverk och noggrant utvalda leverantörer samarbetar vi enbart med de bästa i branschen. Tillsammans levererar tjänster av högsta kvalitet, alltid med hållbarhet och klimatsmart tänkande i fokus.
               Vi sätter alltid kunden först och bygger förtroende genom pålitlig service och genuint engagemang – varje dag, i varje uppdrag.
             </p>
           </header>

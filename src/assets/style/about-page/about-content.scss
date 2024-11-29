@@ -26,22 +26,22 @@
       .about-card-img {
         position: relative;
         width: 355px;
-        height: 355px;
+        min-height: 355px;
         background-image: url(../../images/about-portrait.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
 
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(30deg, #7ceb66d5 30%, #ffffff00);
-          mix-blend-mode: screen;
-        }
+        // &::after {
+        //   content: "";
+        //   position: absolute;
+        //   top: 0;
+        //   left: 0;
+        //   width: 100%;
+        //   height: 100%;
+        //   background: linear-gradient(30deg, #7ceb66d5 30%, #ffffff00);
+        //   mix-blend-mode: screen;
+        // }
       }
 
       .text {
@@ -297,6 +297,22 @@
 
         .text {
           width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .about-content-section {
+    .content {
+      .about-card-full {
+        .about-card-img {
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          min-height: none;
+          max-width: none;
         }
       }
     }
