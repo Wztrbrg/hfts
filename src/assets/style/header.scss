@@ -48,7 +48,6 @@
 
             &:hover {
               color: #c0e0b6;
-              border-bottom: 5px solid $acc-color;
               filter: brightness(1);
             }
           }
@@ -56,6 +55,33 @@
           &:hover {
             color: $acc-color;
             filter: brightness(1.5);
+          }
+
+          .small-arrow {
+            font-size: 16px;
+            padding-left: 6px;
+          }
+        }
+
+        &.dropdown {
+          position: relative;
+
+          .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style: none;
+            padding: 10px;
+            background-color: $prim-color;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            li {
+              a {
+                text-decoration: none;
+              }
+            }
           }
         }
       }

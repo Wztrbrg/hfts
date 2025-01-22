@@ -10,48 +10,77 @@
     width: 100%;
     max-width: $max-content-w;
     display: flex;
-    flex-direction: column;
     gap: 120px;
 
-    .service-article {
-      width: 100%;
-      height: fit-content;
-      max-height: 500px;
-      display: flex;
-      justify-content: space-between;
-      background-color: #daf0da;
-      overflow: hidden;
+    .services-list {
+      list-style-type: none;
+      column-count: 2;
+      column-gap: 40px;
 
-      .service-img {
-        width: 60%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
+      li {
+        a {
+          text-decoration: none;
+        }
       }
 
-      .service-text-container {
-        width: 50%;
-        padding: 40px;
+      .service-article {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 32px;
+        background-color: #daf0da;
+        overflow: hidden;
+        margin-bottom: 40px;
 
-        .heading-container {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
+        .service-img-container {
+          position: relative;
+          width: 100%;
+          height: 300px;
+          overflow: hidden;
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #47c94d8e;
+            mix-blend-mode: darken;
+          }
+
+          .service-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
         }
 
-        .cta-container {
+        .service-text-container {
           width: 100%;
+          padding: 28px;
           display: flex;
           flex-direction: column;
-          align-items: flex-start;
-          gap: 8px;
+          justify-content: space-between;
+          gap: 32px;
 
-          &.right {
-            align-items: flex-end;
+          .heading-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+
+          .cta-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+
+            &.right {
+              align-items: flex-end;
+            }
           }
         }
       }
@@ -59,41 +88,33 @@
   }
 }
 
-@media screen and (max-width: 1152px) {
+@media screen and (max-width: 1220px) {
   .service-selections-section {
     .service-selections-content {
-      .service-article {
-        max-height: 540px;
+      .services-list {
+        .service-article {
+          .service-text-container {
+            min-height: 200px;
+          }
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .service-selections-section {
     .service-selections-content {
-      .service-article {
-        max-height: none;
-        flex-direction: column;
+      justify-content: center;
+      .services-list {
+        column-count: 1;
 
-        .service-img {
-          width: 100%;
-          max-height: 300px;
-          object-position: center -400px;
-        }
+        .service-article {
+          max-width: 700px;
 
-        .service-text-container {
-          width: 100%;
-          gap: 50px;
-          padding: 20px;
-        }
-
-        &:nth-child(2) {
-          flex-direction: column-reverse;
-        }
-
-        .cta-container {
-          align-items: flex-start !important;
+          .service-text-container {
+            min-height: 0;
+          }
         }
       }
     }
@@ -106,9 +127,18 @@
     .service-selections-content {
       gap: 40px;
 
-      .service-article {
-        .service-img {
-          object-position: center bottom;
+      .services-list {
+        .service-article {
+          .service-img-container {
+            height: 300px;
+            .service-img {
+              object-position: center bottom;
+            }
+          }
+
+          .service-text-container {
+            padding: 24px 16px;
+          }
         }
       }
     }

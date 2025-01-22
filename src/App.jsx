@@ -12,6 +12,8 @@ import Report from './pages/Report'
 import Footer from './components/Footer'
 import CookiePopup from './components/CookiePopup';
 import GDPR from './pages/GDPR';
+import SpecificService from './components/services-page/SpecificService';
+
 
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
       <Route path='/kontakt' element={<Contact />} />
       <Route path='/felanmalan' element={<Report />} />
       <Route path='/GDPR' element={<GDPR />} />
+      <Route path='/tjanster/:serviceId' element={<SpecificService />}></Route>
     </Routes>
     <Footer/>
     </>

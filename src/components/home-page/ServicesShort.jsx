@@ -4,13 +4,34 @@ import ServiceImageSecond from '../../assets/images/service-img4.jpeg';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { services } from '../services-page/ServiceSelections';
 
 const ServicesShort = () => {
   return (
     <section className="services-short-section">
       <h1 className="services-short-heading l-h dk-txt">Våra hållbara tjänster</h1>
       <div className="services-short-content">
-        <article className="services-short-card">
+        {services.map((service) => (
+          <article key={service.id} className='services-short-card'>
+            <div className="services-short-img-container">
+              <img 
+                src={service.heroImage} 
+                alt="Bild som symboliserar tjänst vi tillhandahåller"
+                className='services-short-img'
+              />
+            </div>
+            <div className="text-container">
+              <h3 className='lc-h dk-txt'>
+                {service.name}
+              </h3>
+              <p className="lc-p dk-txt">
+                {service.description}
+              </p>
+              <Link to={`/tjanster/${service.id}`}>Läs mer <FontAwesomeIcon icon={faArrowRight} /></Link>
+            </div>
+          </article>
+        ))}
+        {/* <article className="services-short-card">
           <img 
             src={ServiceImageFirst} 
             alt="bild som symboliser en tjänst som vi 
@@ -63,7 +84,7 @@ const ServicesShort = () => {
             </p>
             <Link to={'/tjanster'}>Läs mer <FontAwesomeIcon icon={faArrowRight} /></Link>
           </div>
-        </article>
+        </article> */}
       </div>
     </section>
   )
