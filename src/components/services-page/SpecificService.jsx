@@ -48,12 +48,6 @@ const SpecificService = () => {
               <button className="l-btn acc">Kontakta oss</button>
             </Link>
           </div>
-
-          {/* Includes Section */}
-          <div className="content-container">
-            {/* <div className="tag"></div> */}
-            {/* <h3 className="m-h dk-txt">Detta ingår i tjänsten:</h3> */}
-          </div>
         </div>
       </section>
     </>

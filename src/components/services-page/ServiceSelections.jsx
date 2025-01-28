@@ -14,11 +14,14 @@ const services = [
     heroImage: `${serviceImage1}`,
     description: "Vi tar hand om den dagliga skötseln av din fastighet för att säkerställa att allt fungerar smidigt och effektivt. Vårt team av erfarna tekniker övervakar och underhåller viktiga system som värme, ventilation och vatten, vilket garanterar högsta möjliga standard och minskad energiförbrukning. Genom regelbundna inspektioner och proaktivt underhåll hjälper vi dig att förebygga problem innan de uppstår, vilket sparar tid och pengar samtidigt som vi bidrar till en hållbar fastighetsdrift.",
     includes: [
-      "Städning",
       "Trädgårdsskötsel",
-      "Anläggningsarbeten",
-      "Snickeri och målning",
-      "Vinterunderhåll (snöröjning, sand m.m.)"
+      "Trädgårdsservice",
+      "Anläggning",
+      "Snickare/Målare",
+      "Snöröjning",
+      "Vicevärd",
+      "Teknisk förvaltare",
+      "Lekplatsbesiktning"
     ],
   },
   { 
@@ -27,10 +30,13 @@ const services = [
     heroImage: `${serviceImage2}`,
     description: "Vår tjänst inom fastighetsförvaltning är utformad för att maximera värdet på din fastighet genom strategisk planering och effektiv projektledning. Oavsett om du behöver hjälp med budgetering, hyresgästanpassningar eller större renoveringsprojekt, ser vi till att arbetet utförs inom tidsramar och budget. Med vårt hållbarhetsfokus säkerställer vi att alla projekt drivs med miljövänliga metoder och energieffektiva lösningar, vilket skapar långsiktiga vinster både för din fastighet och miljön.",
     includes: [
-      "Tillsyn av fastighet",
-      "Besiktning",
-      "Tillsyn av värme och ventilation",
-      "Tillsyn av hiss",
+      "Tillsyn av rondering",
+      "Årsplan/Underhållsplan",
+      "Upphandling av tjänster",
+      "Besiktningar",
+      "Kontroll av värme och ventilation",
+      "Kontroll av hissar",
+      "Kontroll av elundercentraler",
       "Reparationer"
     ],
   },

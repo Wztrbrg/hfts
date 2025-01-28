@@ -12,7 +12,8 @@ const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
-    setIsDropdownOpen(true);
+    setIsDropdownOpen(isDropdownOpen ? false : true);
+    // setIsDropdownOpen(true);
   }
 
   const closeDropdown = () => {
@@ -45,15 +46,16 @@ const Header = () => {
             <li className="link-item">
               <NavLink to={'/'} exact='true' className="site-link nav-txt lt-txt" activeclassname="active" onClick={closeMenu}>hem</NavLink>
             </li>
-            <li className="link-item dropdown" onMouseEnter={toggleDropdown} onMouseLeave={closeDropdown}>
+            <li className="link-item dropdown" onMouseEnter={toggleDropdown} onMouseLeave={closeDropdown} onClick={toggleDropdown}>
               <NavLink to={'/tjanster'} className="site-link nav-txt lt-txt" activeclassname="active" onClick={closeMenu}>
-                tjänster<FontAwesomeIcon icon={faChevronDown} className="small-arrow" />
+                tjänster
               </NavLink>
+              <FontAwesomeIcon icon={faChevronDown} className="small-arrow" />
               {isDropdownOpen && (
                 <ul className="dropdown-menu">
                   {services.map((service) => (
                      <li key={service.id}>
-                      <Link to={`/tjanster/${service.id}`}><h3 className="nav-txt dk-txt">{service.name}</h3></Link>
+                      <Link to={`/tjanster/${service.id}`}><h3 className="nav-txt dk-txt" onClick={toggleMenu}>{service.name}</h3></Link>
                      </li>
                   ))}
                 </ul>
