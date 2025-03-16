@@ -31,6 +31,8 @@
       border-radius: 2000px;
       object-fit: cover;
       object-position: center;
+      width: 72px;
+      height: 72px;
     }
 
     .testimonial-card-content {
@@ -42,6 +44,21 @@
       .testimonial-card-title,
       .testimonial-card-desc {
         text-align: center;
+      }
+
+      .star-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+
+        svg {
+          path {
+            fill: yellow;
+            stroke: black;
+            stroke-width: 50;
+          }
+        }
       }
 
       .testimonial-card-desc {

@@ -1,5 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import '../../assets/style/home-page/card-slider.scss';
 
 const CardSlider = () => {
@@ -26,10 +28,12 @@ const CardSlider = () => {
   };
 
   const cards = [
-    { id: 1, image: "https://i.pravatar.cc/110?img=60", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
-    { id: 2, image: "https://i.pravatar.cc/110?img=49", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
-    { id: 3, image: "https://i.pravatar.cc/110?img=18", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
-    { id: 4, image: "https://i.pravatar.cc/110?img=31", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
+    { id: 1, image: "https://lh3.googleusercontent.com/a/ACg8ocL92pA2GHyvdOrcy5IsB-9t6mIwxB80WHZHNi24KG_9jVWwew=w54-h54-p-rp-mo-br100", title: "Jonathan Andersson", desc: "Utmärkt service och trevligt bemötande!" },
+    { id: 2, image: "https://lh3.googleusercontent.com/a/ACg8ocLwgGk0jhyGri_tuw6Vm2bmDWlmpKuIY6fPf-M1AezUKF8RKw=w54-h54-p-rp-mo-br100", title: "titel", desc: "Jättebra service och trevligt bemötande! Håller alltid vad dom lovar" },
+    { id: 3, image: "https://lh3.googleusercontent.com/a-/ALV-UjXeGrCOO7q_SdRQVEF94PHkEndiMF8VB75uF_Uo-qNFTVmweAYY=w54-h54-p-rp-mo-br100", title: "Johan Leskelä", desc: "Jag är otroligt nöjd med Hållbar Fastighetsservice Syd AB. De är pålitliga, professionella och håller alltid hög kvalitet." },
+    { id: 4, image: "https://lh3.googleusercontent.com/a-/ALV-UjXgJ8kZfW7vAR1IRTATQikeVau9G01He1eEeZaX85kjLV5zytq0=w54-h54-p-rp-mo-br100", title: "Malin Nordin", desc: "Fick hjälp att få tillbaka värmen i huset samt tips på hur vi kan få ner energiförbrukningen" },
+    { id: 5, image: "https://lh3.googleusercontent.com/a-/ALV-UjUza5ZhVy53Sh-B6Rwvz_IJ6gkU4wJCA31g4n0V4D2SRjw6li3c=w54-h54-p-rp-mo-br100", title: "Kristian Trpkoski", desc: "Kompetenta konsulter med väldigt bra service. Kommer fortsätta samarbetet 5/5" },
+    { id: 6, image: "https://lh3.googleusercontent.com/a/ACg8ocJ_Z6RkCieeA9VjCQRxVDHm3boiHYSChrKla68qGaKO2XaMPw=w54-h54-p-rp-mo-br100", title: "Ann-Sofie Göransson", desc: "Kompetent och trevlig personal. Kan starkt rekommenderas" },
   ];
 
   return (
@@ -41,6 +45,13 @@ const CardSlider = () => {
               <h3 className="testimonial-card-title c-h dk-txt">
                 {card.title}
               </h3>
+              <div className="star-container">
+                <FontAwesomeIcon icon={ faStar } />
+                <FontAwesomeIcon icon={ faStar } />
+                <FontAwesomeIcon icon={ faStar } />
+                <FontAwesomeIcon icon={ faStar } />
+                <FontAwesomeIcon icon={ faStar } />
+              </div>
               <p className="testimonial-card-desc c-p dk-txt">
                 {card.desc}
               </p>
