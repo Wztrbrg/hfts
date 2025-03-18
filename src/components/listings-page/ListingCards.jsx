@@ -5,7 +5,7 @@ const ListingCards = () => {
   const [listings, setListings] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/fetch_listings.php")
+    fetch("https://hallbarservice.se/fetch_listings.php")
       .then((response) => response.json())
       .then((data) => setListings(data.results))
       .catch((error) => console.error("Error fetching listings:", error));
