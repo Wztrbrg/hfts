@@ -31,21 +31,9 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-
-        // &::after {
-        //   content: "";
-        //   position: absolute;
-        //   top: 0;
-        //   left: 0;
-        //   width: 100%;
-        //   height: 100%;
-        //   background: linear-gradient(30deg, #7ceb66d5 30%, #ffffff00);
-        //   mix-blend-mode: screen;
-        // }
       }
 
       .text {
-        // width: 50%;
         width: calc(100% - 395px);
 
         &.full {
