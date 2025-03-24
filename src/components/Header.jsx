@@ -62,7 +62,7 @@ const Header = () => {
               )}
             </li>
             <li className="link-item">
-              <NavLink to={'/bostader-och-lokaler'} className="site-link nav-txt lt-txt" activeclassname="active" onClick={closeMenu}>ledigt</NavLink>
+              <NavLink to={'/lagenheter-och-lokaler'} className="site-link nav-txt lt-txt" activeclassname="active" onClick={closeMenu}>lediga lägenheter & lokaler</NavLink>
             </li>
             <li className="link-item">
               <NavLink to={'/om-oss'} className="site-link nav-txt lt-txt" activeclassname="active" onClick={closeMenu}>om oss</NavLink>

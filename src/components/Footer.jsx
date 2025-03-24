@@ -22,9 +22,9 @@ const Footer = () => {
                         <li>
                         <Link to={'/tjanster'} className="lt-txt">Tjänster</Link>
                         </li>
-                        {/* <li>
-                        <Link to={'/bostader-och-lokaler'} className="lt-txt">Lediga bostäder & lokaler</Link>
-                        </li> */}
+                        <li>
+                        <Link to={'/lagenheter-och-lokaler'} className="lt-txt">Lediga lägenheter & lokaler</Link>
+                        </li>
                         <li>
                         <Link to={'/om-oss'} className="lt-txt">Om oss</Link>
                         </li>

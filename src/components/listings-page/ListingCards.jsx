@@ -13,26 +13,32 @@ const ListingCards = () => {
 
   return (
     <>
-      <section className="listing-cards">
-        {listings.map((listing) => (
-            <a href={`https://homeq.se${listing.uri}`} target="_blank">
-              <article key={listing.id} className="card">
-                <img src={listing.images[0].image} className="card-img" alt="förhandsgranskning av fastighet" />
-                <div className="card-text-container">
-                  <header className="card-header">
-                    <p className="card-text">{listing.municipality}, {listing.city}</p>
-                    <h3 className="card-title">{listing.title}</h3>
-                  </header>
-                  <div className="card-info-container">
-                    <p className="card-text"><b>{listing.rent}kr</b> / mån</p>
-                    <p className="card-text">Inflytt: Efter överenskommelse</p>
-                    <p className="card-text">{listing.rooms} rum • {listing.area}m²</p>
+        <section className="listing-cards">
+          {listings.filter(listing => listing.city === "Malmö").length > 0 ? (
+            listings
+            .filter(listing => listing.city === "Malmö")
+            .map((listing) => (
+              <a key={listing.id} href={`https://homeq.se${listing.uri}`} target="_blank" rel="noopener noreferrer">
+                <article className="card">
+                  <img src={listing.images[0].image} className="card-img" alt="förhandsgranskning av fastighet" />
+                  <div className="card-text-container">
+                    <header className="card-header">
+                      <p className="card-text">{listing.municipality}, {listing.city}</p>
+                      <h3 className="card-title">{listing.title}</h3>
+                    </header>
+                    <div className="card-info-container">
+                      <p className="card-text"><b>{listing.rent}kr</b> / mån</p>
+                      <p className="card-text">Inflytt: Efter överenskommelse</p>
+                      <p className="card-text">{listing.rooms} rum • {listing.area}m²</p>
+                    </div>
                   </div>
-                </div>
-              </article>
-            </a>
-        ))}
-      </section>
+                </article>
+              </a>
+            ))
+          ) : (
+            <p className="no-listings dk-txt l-p">Just nu finns det inga lediga lägenheter eller lokaler.</p>
+          )}
+        </section>
     </>
   );
 };
