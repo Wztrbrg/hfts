@@ -68,6 +68,62 @@ const services = [
       "Vi anpassar våra tjänster efter säsong och era specifika önskemål.",
     ],
   },
+  { 
+    id: "ekonomisk-forvaltning", 
+    name: "Ekonomisk förvaltning",
+    heroImage: `${serviceImage4}`,
+    description: "Grönskande och välskötta utemiljöer. Vi hjälper dig att hålla utemiljöerna i toppskick året runt. Vår trädgårdsservice omfattar allt från gräsklippning och häcktrimning till skötsel av planteringar. Vi skapar trivsamma och funktionella utomhusmiljöer som ökar fastighetens värde och boendekvalitet.",
+    includes: [
+      "Gräsklippning och kanttrimning", 
+      "Häckklippning och beskärning", 
+      "Ogräsbekämpning",
+      "Plantering och underhåll av rabatter",
+      "Höst- och vårstädning av trädgårdar",
+      "Vi anpassar våra tjänster efter säsong och era specifika önskemål.",
+    ],
+  },
+  { 
+    id: "energi-och-miljotjanster", 
+    name: "Ekonomi & Miljötjänster",
+    heroImage: `${serviceImage4}`,
+    description: "Grönskande och välskötta utemiljöer. Vi hjälper dig att hålla utemiljöerna i toppskick året runt. Vår trädgårdsservice omfattar allt från gräsklippning och häcktrimning till skötsel av planteringar. Vi skapar trivsamma och funktionella utomhusmiljöer som ökar fastighetens värde och boendekvalitet.",
+    includes: [
+      "Gräsklippning och kanttrimning", 
+      "Häckklippning och beskärning", 
+      "Ogräsbekämpning",
+      "Plantering och underhåll av rabatter",
+      "Höst- och vårstädning av trädgårdar",
+      "Vi anpassar våra tjänster efter säsong och era specifika önskemål.",
+    ],
+  },
+  { 
+    id: "teknisk-forvaltning", 
+    name: "Teknisk förvaltning",
+    heroImage: `${serviceImage4}`,
+    description: "Grönskande och välskötta utemiljöer. Vi hjälper dig att hålla utemiljöerna i toppskick året runt. Vår trädgårdsservice omfattar allt från gräsklippning och häcktrimning till skötsel av planteringar. Vi skapar trivsamma och funktionella utomhusmiljöer som ökar fastighetens värde och boendekvalitet.",
+    includes: [
+      "Gräsklippning och kanttrimning", 
+      "Häckklippning och beskärning", 
+      "Ogräsbekämpning",
+      "Plantering och underhåll av rabatter",
+      "Höst- och vårstädning av trädgårdar",
+      "Vi anpassar våra tjänster efter säsong och era specifika önskemål.",
+    ],
+  },
+  { 
+    id: "bygg", 
+    name: "Bygg",
+    heroImage: `${serviceImage4}`,
+    description: "Grönskande och välskötta utemiljöer. Vi hjälper dig att hålla utemiljöerna i toppskick året runt. Vår trädgårdsservice omfattar allt från gräsklippning och häcktrimning till skötsel av planteringar. Vi skapar trivsamma och funktionella utomhusmiljöer som ökar fastighetens värde och boendekvalitet.",
+    includes: [
+      "Gräsklippning och kanttrimning", 
+      "Häckklippning och beskärning", 
+      "Ogräsbekämpning",
+      "Plantering och underhåll av rabatter",
+      "Höst- och vårstädning av trädgårdar",
+      "Vi anpassar våra tjänster efter säsong och era specifika önskemål.",
+    ],
+  },
 ];
 
 const ServiceSelections = () => {
