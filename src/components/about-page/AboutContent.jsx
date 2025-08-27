@@ -4,6 +4,11 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 
 const AboutContent = () => {
+  
+  const startYear = 2012;
+  const currentYear = new Date().getFullYear();
+  const yearsExperience = currentYear - startYear;
+
   return (
     <section className="about-content-section">
       <div className="content">
@@ -29,7 +34,7 @@ const AboutContent = () => {
           </header>
           <header className="text full">
             <p className="l-p dk-txt">
-              <span className="m-h dk-txt">Grundaren Andreas Jamous </span>är utbildad fastighetsingenjör och har 12 års erfarenhet inom fastighetsservice och har under åren byggt upp en djup förståelse för branschens utmaningar och kundernas behov. Med ett oslagbart nätverk och noggrant utvalda leverantörer samarbetar vi enbart med de bästa i branschen. Tillsammans levererar tjänster av högsta kvalitet, alltid med hållbarhet och klimatsmart tänkande i fokus.
+              <span className="m-h dk-txt">Grundaren Andreas Jamous </span>är utbildad fastighetsingenjör och har {yearsExperience} års erfarenhet inom fastighetsservice och har under åren byggt upp en djup förståelse för branschens utmaningar och kundernas behov. Med ett oslagbart nätverk och noggrant utvalda leverantörer samarbetar vi enbart med de bästa i branschen. Tillsammans levererar tjänster av högsta kvalitet, alltid med hållbarhet och klimatsmart tänkande i fokus.
               Vi sätter alltid kunden först och bygger förtroende genom pålitlig service och genuint engagemang – varje dag, i varje uppdrag.
             </p>
           </header>
