@@ -97,7 +97,9 @@ const ReportForm = () => {
           <label htmlFor="user_description">Beskrivning</label>
           <textarea type="text" id='user_description' rows={5} name='user_description' placeholder='Här beskriver du felet. Exempelvis: "Droppande kran i köket"' required />
           {isSent &&
-            <p className="l-p acc-txt"><strong>Vi har tagit emot din felanmälan och kommer att hantera den så snart som möjligt!</strong></p>
+            <div className="confirm-msg">
+              <p className='l-p dp-txt'><strong>Vi har tagit emot din felanmälan och kommer att hantera den så snart som möjligt!</strong></p>
+            </div>
           }
           <button className='l-btn acc'>SKICKA</button>
         </form>

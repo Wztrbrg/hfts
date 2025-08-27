@@ -81,7 +81,9 @@ const ContactForm = () => {
           <label htmlFor="user_message">Meddelande</label>
           <textarea type="text" rows={5} name='user_message' id='user_message' placeholder='Här kan du skriva dina frågor eller funderingar'/>
           {isSent &&
-            <p className="l-p acc-txt"><strong>Tack för ditt meddelande!</strong></p>
+            <div className="confirm-msg">
+              <p className='l-p dp-txt'><strong>Tack för ditt meddelande!</strong></p>
+            </div>
           }
           <button type="submit" className='l-btn acc'>SKICKA</button>
         </form>
