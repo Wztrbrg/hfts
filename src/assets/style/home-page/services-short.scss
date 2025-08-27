@@ -28,7 +28,7 @@
       width: calc(50% - 20px);
       background-color: $bg-color;
       box-shadow: 0 25px 40px #8d8d8d2a;
-      margin-bottom: 40px;
+      // margin-bottom: 40px;
 
       .services-short-img-container {
         position: relative;
@@ -90,18 +90,6 @@
   }
 }
 
-@media screen and (max-width: 821px) {
-  .services-short-section {
-    .services-short-content {
-      column-count: 1;
-
-      .services-short-card {
-        margin-bottom: 24px;
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 635px) {
   .services-short-section {
     padding: 40px 8px;
@@ -112,12 +100,16 @@
     .services-short-content {
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center;
       width: 100%;
+      gap: 20px;
 
       .services-short-card {
         width: 100% !important;
         max-width: unset;
+      }
+
+      button {
+        width: 100%;
       }
     }
   }
