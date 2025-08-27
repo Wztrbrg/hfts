@@ -3,6 +3,9 @@ import serviceImage1 from '../../assets/images/skotsel.jpeg';
 import serviceImage2 from '../../assets/images/projekt.jpg';
 import serviceImage3 from '../../assets/images/cleaning.jpg';
 import serviceImage4 from '../../assets/images/garden.jpg';
+import serviceImage5 from '../../assets/images/ekonomi.jpg';
+import serviceImage6 from '../../assets/images/energi.jpg';
+import serviceImage7 from '../../assets/images/bygg.jpg';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -71,57 +74,53 @@ const services = [
   { 
     id: "ekonomisk-forvaltning", 
     name: "Ekonomisk förvaltning",
-    heroImage: `${serviceImage4}`,
-    description: "Grönskande och välskötta utemiljöer. Vi hjälper dig att hålla utemiljöerna i toppskick året runt. Vår trädgårdsservice omfattar allt från gräsklippning och häcktrimning till skötsel av planteringar. Vi skapar trivsamma och funktionella utomhusmiljöer som ökar fastighetens värde och boendekvalitet.",
+    heroImage: `${serviceImage5}`,
+    description: "Vi erbjuder professionell ekonomisk förvaltning för bostadsrättsföreningar och fastighetsägare. Med vår hjälp får ni full kontroll över föreningens ekonomi, trygg hantering av bokföring och fakturering samt tydlig rapportering. Vi arbetar proaktivt för att optimera era kostnader och säkerställa långsiktig ekonomisk stabilitet.",
     includes: [
-      "Gräsklippning och kanttrimning", 
-      "Häckklippning och beskärning", 
-      "Ogräsbekämpning",
-      "Plantering och underhåll av rabatter",
-      "Höst- och vårstädning av trädgårdar",
-      "Vi anpassar våra tjänster efter säsong och era specifika önskemål.",
+      "Löpande bokföring och redovisning",
+      "Fakturahantering och betalningsbevakning",
+      "Budgetering och ekonomisk planering",
+      "Upprättande av årsredovisning",
+      "Rapportering till styrelse och medlemmar",
+      "Rådgivning kring lån och investeringar",
+      "Vi skräddarsyr ekonomiska lösningar efter era behov och erbjuder personlig service med fokus på trygghet och transparens.",
     ],
   },
   { 
     id: "energi-och-miljotjanster", 
-    name: "Ekonomi & Miljötjänster",
-    heroImage: `${serviceImage4}`,
-    description: "Grönskande och välskötta utemiljöer. Vi hjälper dig att hålla utemiljöerna i toppskick året runt. Vår trädgårdsservice omfattar allt från gräsklippning och häcktrimning till skötsel av planteringar. Vi skapar trivsamma och funktionella utomhusmiljöer som ökar fastighetens värde och boendekvalitet.",
+    name: "Energi & Miljötjänster",
+    heroImage: `${serviceImage6}`,
+    description: "Vi hjälper fastighetsägare, byggherrar och bostadsrättsföreningar att bygga och förvalta hållbara fastigheter. Med rätt analyser, beräkningar och certifieringar kan du både sänka energikostnader, minska klimatpåverkan och skapa en bättre inomhusmiljö för de som bor eller arbetar i byggnaden.",
     includes: [
-      "Gräsklippning och kanttrimning", 
-      "Häckklippning och beskärning", 
-      "Ogräsbekämpning",
-      "Plantering och underhåll av rabatter",
-      "Höst- och vårstädning av trädgårdar",
-      "Vi anpassar våra tjänster efter säsong och era specifika önskemål.",
+      "Energiberäkning: Genom energiberäkningar får du en tydlig bild av hur mycket energi en byggnad använder och var det finns potential till förbättring. Beräkningen används ofta i projekteringsfasen för att säkerställa att byggnaden uppfyller Boverkets byggregler och andra krav.",
+      "Energideklaration: En energideklaration är ett krav vid försäljning eller uthyrning av byggnader och visar byggnadens energiprestanda. Vi tar fram underlaget och hjälper dig att förstå vilka åtgärder som kan minska energikostnaderna.",
+      "Dagsljusberäkning: Rätt mängd dagsljus skapar trivsel, välmående och kan till och med påverka hälsan positivt. Med våra beräkningar får du svart på vitt om byggnaden uppfyller gällande dagsljuskrav.",
+      "Solstudie & Solvärmelast: Vi analyserar hur solens strålning påverkar fastigheten under olika tider på året. Det ger beslutsunderlag kring placering av fönster, solskydd och lösningar för att undvika övertemperaturer.",
+      "VSC & Utblick: Vi utför tekniska beräkningar som visar både kvaliteten på dagsljuset inomhus och hur boende eller användare upplever utsikten från byggnaden.",
+      "Klimatberäkning: Vi tar fram livscykelanalyser (LCA) för att beräkna byggnadens totala klimatpåverkan – från materialval till drift. Detta är en viktig del i att minska fastighetens miljöavtryck.",
+      "Klimatdeklaration: Sedan 2022 är det krav på klimatdeklaration för nybyggnation i Sverige. Vi hjälper dig med hela processen så att deklarationen blir korrekt och godkänd.",
+      "Klimatriskanalys: Vi analyserar hur framtida klimatförändringar kan påverka byggnaden, till exempel risk för värmeböljor, översvämningar eller fuktskador. På så sätt kan du planera smartare åtgärder redan idag.",
+      "LFM30: Vi arbetar enligt Malmös färdplan för klimatneutralt byggande till år 2030 och kan vägleda ditt projekt mot de mål som satts upp för en mer hållbar byggsektor.",
+      "Certifieringar: Att miljöcertifiera en byggnad ger inte bara ett kvitto på hållbarhet – det höjer även fastighetens värde och attraktionskraft.",
+      "Vi erbjuder stöd i flera certifieringssystem: Miljöbyggnad – Sveriges mest använda certifiering för byggnader. Svanen – välkänd nordisk miljömärkning. BREEAM – internationellt system som används världen över. WELL – med fokus på hälsa och välmående inomhus. EU-taxonomi – hållbarhetsklassificering enligt EU:s regelverk. NollCO₂ – certifiering för klimatneutralitet. Vi guidar dig genom hela processen – från förstudie till färdig certifiering.",
+      "Termiskt klimat (PPD): Vi analyserar temperaturförhållanden för att säkerställa att inomhusmiljön upplevs behaglig för de som vistas i byggnaden.",
+      "Kyleffekt: Våra beräkningar visar om fastigheten har tillräcklig kyleffekt för att motverka övertemperaturer under sommaren.",
+      "Yttemperatur: Vi kontrollerar och analyserar yttemperaturer på golv, väggar och fönster för att upptäcka obalanser som kan påverka komfort och energiförbrukning.",
     ],
   },
-  { 
-    id: "teknisk-forvaltning", 
-    name: "Teknisk förvaltning",
-    heroImage: `${serviceImage4}`,
-    description: "Grönskande och välskötta utemiljöer. Vi hjälper dig att hålla utemiljöerna i toppskick året runt. Vår trädgårdsservice omfattar allt från gräsklippning och häcktrimning till skötsel av planteringar. Vi skapar trivsamma och funktionella utomhusmiljöer som ökar fastighetens värde och boendekvalitet.",
-    includes: [
-      "Gräsklippning och kanttrimning", 
-      "Häckklippning och beskärning", 
-      "Ogräsbekämpning",
-      "Plantering och underhåll av rabatter",
-      "Höst- och vårstädning av trädgårdar",
-      "Vi anpassar våra tjänster efter säsong och era specifika önskemål.",
-    ],
-  },
-  { 
-    id: "bygg", 
+  {
+    id: "bygg",
     name: "Bygg",
-    heroImage: `${serviceImage4}`,
-    description: "Grönskande och välskötta utemiljöer. Vi hjälper dig att hålla utemiljöerna i toppskick året runt. Vår trädgårdsservice omfattar allt från gräsklippning och häcktrimning till skötsel av planteringar. Vi skapar trivsamma och funktionella utomhusmiljöer som ökar fastighetens värde och boendekvalitet.",
+    heroImage: `${serviceImage7}`,
+    description: "Vi erbjuder professionella bygg- och renoveringstjänster för bostadsrättsföreningar, fastighetsägare och företag. Vårt erfarna team av snickare och hantverkare utför allt från mindre reparationer till större ombyggnationer och totalrenoveringar. Vi arbetar med hög kvalitet, tydlig kommunikation och fokus på hållbara lösningar för att skapa trygga och funktionella miljöer.",
     includes: [
-      "Gräsklippning och kanttrimning", 
-      "Häckklippning och beskärning", 
-      "Ogräsbekämpning",
-      "Plantering och underhåll av rabatter",
-      "Höst- och vårstädning av trädgårdar",
-      "Vi anpassar våra tjänster efter säsong och era specifika önskemål.",
+      "Snickeriarbeten och reparationer",
+      "Renovering av lägenheter och lokaler",
+      "Ombyggnation och tillbyggnad",
+      "Köks- och badrumsrenovering",
+      "Golvläggning och målning",
+      "Projektledning och rådgivning",
+      "Vi skräddarsyr byggprojekt efter era behov och erbjuder helhetslösningar från idé till färdigställande.",
     ],
   },
 ];

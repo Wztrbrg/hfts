@@ -16,14 +16,16 @@
   }
 
   .services-short-content {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     max-width: $max-content-w;
     gap: 40px;
-    column-count: 2;
+    justify-content: center;
 
     .services-short-card {
       position: relative;
-      width: 100%;
+      width: calc(50% - 20px);
       background-color: $bg-color;
       box-shadow: 0 25px 40px #8d8d8d2a;
       margin-bottom: 40px;
