@@ -74,6 +74,41 @@
         margin-bottom: 16px;
       }
 
+      .accordion-item {
+        width: 100%;
+        // border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 6px;
+
+        .accordion-header {
+          width: 100%;
+          padding: 15px;
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #fff;
+
+          .accordion-icon {
+            font-size: 24px;
+            transition: transform 0.3s ease;
+            color: $acc-color;
+          }
+        }
+
+        .accordion-content {
+          padding: 15px;
+          // border-top: 1px solid #ccc;
+          background-color: #fff;
+        }
+
+        &.open {
+          .accordion-header {
+            background-color: $prim-color;
+          }
+        }
+      }
+
       ul {
         padding-left: 20px;
         display: flex;
