@@ -1,10 +1,12 @@
 import '../../assets/style/report-page/report-form.scss';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 const ReportForm = () => {
 
+  const [captchaValue, setCaptchaValue] = useState(null);
   const [isSent, setIsSent] = useState(false);
 
   const form = useRef();
@@ -12,13 +14,10 @@ const ReportForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    console.log("Firstname:", form.current.user_name.value);
-    console.log("Lastname:", form.current.user_lastname.value);
-    console.log("Telefon:", form.current.user_phone.value);
-    console.log("Email:", form.current.user_email.value);
-    console.log("Adress:", form.current.user_address.value);
-    console.log("Lägenhet:", form.current.user_apartment.value);
-    console.log("Beskrivning:", form.current.user_description.value);
+    if (!captchaValue) {
+      alert("Vänligen verifiera att du inte är en robot.");
+      return;
+    }
     
     emailjs
       .sendForm('service_felanmalan', 'template_felanmalan', form.current, 'wwJg1FgSLud6yDF7W')
@@ -26,6 +25,8 @@ const ReportForm = () => {
         () => {
           console.log('Email successfully sent');
           setIsSent(true);
+          form.current.reset();
+          setCaptchaValue(null);
         },
         (error) => {
           console.log('Email service failed: ', error.text);
@@ -96,6 +97,12 @@ const ReportForm = () => {
           <input type="text" id='user_apartment' name="user_apartment" placeholder='1101' required />
           <label htmlFor="user_description">Beskrivning</label>
           <textarea type="text" id='user_description' rows={5} name='user_description' placeholder='Här beskriver du felet. Exempelvis: "Droppande kran i köket"' required />
+          <ReCAPTCHA
+            sitekey="6LdiH_crAAAAAI9ktVa7wISGj9OhytniiPuSXWg6"
+            onChange={(value) => setCaptchaValue(value)}
+            className="recaptcha"
+            style={{ marginBottom: "20px"}}
+          />
           {isSent &&
             <div className="confirm-msg">
               <p className='l-p dp-txt'><strong>Vi har tagit emot din felanmälan och kommer att hantera den så snart som möjligt!</strong></p>

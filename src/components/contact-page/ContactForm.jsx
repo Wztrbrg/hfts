@@ -3,10 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 const ContactForm = () => {
 
+  const [captchaValue, setCaptchaValue] = useState(null);
   const [isSent, setIsSent] = useState(false);
 
   const form = useRef();
@@ -14,11 +16,10 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    console.log("Firstname:", form.current.user_name.value);
-    console.log("Lastname:", form.current.user_lastname.value);
-    console.log("Telefon:", form.current.user_phone.value);
-    console.log("Email:", form.current.user_email.value);
-    console.log("Message:", form.current.user_message.value);
+    if (!captchaValue) {
+      alert("Vänligen verifiera att du inte är en robot.");
+      return;
+    }
     
     emailjs
       .sendForm('service_kontakt', 'template_kontakt', form.current, 'wwJg1FgSLud6yDF7W')
@@ -26,6 +27,8 @@ const ContactForm = () => {
         () => {
           console.log('Email successfully sent');
           setIsSent(true);
+          form.current.reset();
+          setCaptchaValue(null);
         },
         (error) => {
           console.log('Email service failed: ', error.text);
@@ -80,6 +83,12 @@ const ContactForm = () => {
           <input type="text" name='user_email' id='user_email' placeholder='anders.persson@exempel.se'/>
           <label htmlFor="user_message">Meddelande</label>
           <textarea type="text" rows={5} name='user_message' id='user_message' placeholder='Här kan du skriva dina frågor eller funderingar'/>
+          <ReCAPTCHA
+            sitekey="6LdiH_crAAAAAI9ktVa7wISGj9OhytniiPuSXWg6"
+            onChange={(value) => setCaptchaValue(value)}
+            className="recaptcha"
+            style={{ marginBottom: "20px"}}
+          />
           {isSent &&
             <div className="confirm-msg">
               <p className='l-p dp-txt'><strong>Tack för ditt meddelande!</strong></p>
