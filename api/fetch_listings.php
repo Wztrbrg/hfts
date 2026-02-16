@@ -10,7 +10,7 @@ $apiUrl = "https://api.homeq.se/api/v3/cards/";
 
 // Prepare the request payload
 $data = array(
-  "company" => 429 // Replace with your actual company ID
+  "company" => 429
 );
 
 $options = array(

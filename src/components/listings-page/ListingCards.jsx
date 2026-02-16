@@ -7,23 +7,25 @@ const ListingCards = () => {
   useEffect(() => {
     fetch("https://hallbarservice.se/fetch_listings.php")
       .then((response) => response.json())
-      .then((data) => setListings(data.results))
+      .then((data) => {
+        setListings(data.results);
+      })
       .catch((error) => console.error("Error fetching listings:", error));
   }, []);
 
   return (
     <>
         <section className="listing-cards">
-          {listings.filter(listing => listing.city === "Malmö").length > 0 ? (
+          {listings.filter(listing => listing.county === "Skåne län").length > 0 ? (
             listings
-            .filter(listing => listing.city === "Malmö")
+            .filter(listing => listing.county === "Skåne län")
             .map((listing) => (
               <a key={listing.id} href={`https://homeq.se${listing.uri}`} target="_blank" rel="noopener noreferrer">
                 <article className="card">
                   <img src={listing.images[0].image} className="card-img" alt="förhandsgranskning av fastighet" />
                   <div className="card-text-container">
                     <header className="card-header">
-                      <p className="card-text">{listing.municipality}, {listing.city}</p>
+                      <p className="card-text">{listing.county}, {listing.city}</p>
                       <h3 className="card-title">{listing.title}</h3>
                     </header>
                     <div className="card-info-container">
